@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -94,7 +94,7 @@
     <div id="preloader">
       <div id="loader"></div>
     </div>
-    <header id="header" class="site-header border-bottom border-dark">
+    <header id="header" class="site-header border-bottom border-dark" >
       <nav id="header-nav" class="navbar navbar-expand-lg px-3">
         <div class="container">
           <a class="navbar-brand d-lg-none" href="index.html">
@@ -103,8 +103,8 @@
           <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
             <div class="offcanvas-header px-4 pb-0">
-              <a class="navbar-brand" href="index.html">
-                <img src="images/main-logo.png" class="logo">
+              <a class="navbar-brand d-none d-lg-block me-0" href="index.html">
+                <img src="images/main-logo.png" class="logo" width="70px" height="100px">
               </a>
               <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
             </div>
@@ -170,13 +170,15 @@
                 
 
                   <li class="nav-item">
-                    <a class="nav-link me-0" href="shop.html">Liên hệ</a>
+                    <a class="nav-link me-0" href="contact.html">Liên hệ</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link me-0" href="LOGIN.html" style=" width: 110PX;">Tài khoản</a>
                   </li>
                   <li class="cart-dropdown nav-item dropdown">
-                    <a class="nav-link dropdown-toggle me-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Giỏ hàng</a>
+                    <a class="nav-link dropdown-toggle me-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Giỏ hàng <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg></a>
                     <div class="dropdown-menu dropdown-menu-end p-3">
                       <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-primary">GIỎ HÀNG CỦA BẠN</span>
@@ -188,7 +190,7 @@
                             <h5 class="card-title fs-5 text-uppercase">
                               <a href="single-product.html">Gentle Lavender Bliss</a>
                             </h5>
-                            <small class="text-body-secondary">A calming blend of lavender essential oils.</small>
+                            <small class="text-body-secondary">Một sự kết hợp bình tĩnh của tinh dầu oải hương.</small>
                           </div>
                           <span class="text-primary">$120</span>
                         </li>
@@ -197,18 +199,18 @@
                             <h5 class="card-title fs-5 text-uppercase">
                               <a href="single-product.html">Citrus Splash Delight</a>
                             </h5>
-                            <small class="text-body-secondary">Invigorating blend of citrus essential oils.</small>
+                            <small class="text-body-secondary">Sự kích thích từ sự kết hợp của tinh dầu cam.</small>
                           </div>
                           <span class="text-primary">$870</span>
                         </li>
                         <li class="list-group-item bg-transparent border-dark d-flex justify-content-between">
-                          <span class="text-uppercase"><b>Total (USD)</b></span>
+                          <span class="text-uppercase"><b>Tổng cộng (USD)</b></span>
                           <strong>$990</strong>
                         </li>
                       </ul>
                       <div class="d-flex flex-wrap justify-content-center">
-                        <a href="cart.html" class="w-100 btn btn-dark mb-1" type="submit">View Cart</a>
-                        <a href="checkout.html" class="w-100 btn btn-primary" type="submit">Go to checkout</a>
+                        <a href="cart.html" class="w-100 btn btn-dark mb-1" type="submit">Xem giỏ hàng</a>
+                        <a href="checkout.html" class="w-100 btn btn-primary" type="submit">Tiến hành thanh toán</a>
                       </div>
                     </div>
                   </li>
@@ -224,12 +226,12 @@
         <div class="container">
           <div class="row">
             <div class="text-center padding-large no-padding-bottom">
-              <h1>Contact</h1>
+              <h1>Liên hệ</h1>
               <div class="breadcrumbs">
                 <span class="item">
-                  <a href="index.html">Home ></a>
+                  <a href="index.html">Trang chủ ></a>
                 </span>
-                <span class="item">Contact</span>
+                <span class="item">Liên hệ</span>
               </div>
             </div>
           </div>
@@ -240,47 +242,47 @@
       <div class="container">
         <div class="row">
           <div class="contact-info col-lg-6 pb-3">
-            <h3>Contact info</h3>
-            <p>Tortor dignissim convallis aenean et tortor at risus viverra adipiscing.</p>
+            <h3>Thông tin liên hệ</h3>
+            <p>Bạn cũng có thể mua sản phẩm trực tiếp từ các cửa hàng của chúng tôi.</p>
             <div class="page-content d-flex flex-wrap">
               <div class="col-lg-6 col-sm-12">
                 <div class="content-box text-dark pe-4 mb-5">
-                  <h5 class="widget-title text-decoration-underline text-uppercase">Office</h5>
+                  <h5 class="widget-title text-decoration-underline text-uppercase">Văn phòng</h5>
                   <div class="contact-address pt-3">
-                    <p>730 Glenstone Ave 65802, Springfield, US</p>
+                    <p>730 Đường Nguyễn Văn Trỗi, Quận 1, TP.HCM, Việt Nam</p>
                   </div>
                   <div class="contact-number">
                     <p>
-                      <a href="#">+123 987 321</a>
+                      <a href="tel:+84-28-555-1234">+84-28-555-1234</a>
                     </p>
                     <p>
-                      <a href="#">+123 123 654</a>
+                      <a href="tel:+84-28-555-5678">+84-28-555-5678</a>
                     </p>
                   </div>
                   <div class="email-address">
                     <p>
-                      <a href="#">mail@yourinfo.com</a>
+                      <a href="mailto:info@soapcompany.com">info@soapcompany.com</a>
                     </p>
                   </div>
                 </div>
               </div>
               <div class="col-lg-6 col-sm-12">
                 <div class="content-box">
-                  <h5 class="widget-title text-decoration-underline text-uppercase">Management</h5>
+                  <h5 class="widget-title text-decoration-underline text-uppercase">Văn phòng</h5>
                   <div class="contact-address pt-3">
-                    <p>730 Glenstone Ave 65802, Springfield, US</p>
+                    <p>123 Nguyễn Văn Linh, Quận 7, TP.HCM, Việt Nam</p>
                   </div>
                   <div class="contact-number">
                     <p>
-                      <a href="#">+123 987 321</a>
+                      <a href="tel:+84-28-555-1234">+84-28-555-1234</a>
                     </p>
                     <p>
-                      <a href="#">+123 123 654</a>
+                      <a href="tel:+84-28-555-5678">+84-28-555-5678</a>
                     </p>
                   </div>
                   <div class="email-address">
                     <p>
-                      <a href="#">mail@yourinfo.com</a>
+                      <a href="mailto:info@soapcompany.com">info@soapcompany.com</a>
                     </p>
                   </div>
                 </div>
@@ -288,30 +290,30 @@
             </div>
           </div>
           <div class="inquiry-item col-lg-6">
-            <h3>Any questions?</h3>
-            <p>Use the form below to get in touch with us.</p>
+            <h3>Bạn có câu hỏi?</h3>
+            <p>Sử dụng biểu mẫu dưới đây để liên hệ với chúng tôi.</p>
             <form id="form">
               <div class="py-3">
-                <label>Your Name *</label>
-                <input type="text" name="name" placeholder="Write your name here" class="w-100">
+                <label>Tên của bạn *</label>
+                <input type="text" name="name" placeholder="Viết tên của bạn vào đây" class="w-100">
               </div>
               <div class="py-3">
-                <label>Your Email *</label>
-                <input type="text" name="email" placeholder="Write your email here" class="w-100">
+                <label>Email của bạn *</label>
+                <input type="text" name="email" placeholder="Viết email của bạn vào đây" class="w-100">
               </div>
               <div class="py-3">
-                <label>Phone Number</label>
-                <input type="number" name="number" placeholder="Write your phone nuumber" class="w-100">
+                <label>Số điện thoại</label>
+                <input type="number" name="number" placeholder="Viết số điện thoại của bạn vào đây" class="w-100">
               </div>
               <div class="py-3">
-                <label>Subject *</label>
-                <input type="text" name="subject" placeholder="Write your subject here" class="w-100">
+                <label>Chủ đề *</label>
+                <input type="text" name="subject" placeholder="Viết chủ đề của bạn vào đây" class="w-100">
               </div>
               <div class="py-3">
-                <label>Your Message *</label>
-                <textarea placeholder="Write Your Message Here" class="w-100"></textarea>
+                <label>Tin nhắn của bạn *</label>
+                <textarea placeholder="Viết tin nhắn của bạn vào đây" class="w-100"></textarea>
               </div>
-              <button type="submit" name="submit" class="btn btn-dark w-100 my-3">Submit</button>
+              <button type="submit" name="submit" class="btn btn-dark w-100 my-3">Gửi</button>
             </form>
           </div>
         </div>
@@ -328,48 +330,51 @@
           <div class="col-lg-6">
             <div class="locations-wrap" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="600" data-aos-duration="1000" data-aos-once="true">
               <div class="display-header">
-                <h3>Our stores</h3>
-                <p>You can also directly buy products from our stores.</p>
+                <h3>Các cửa hàng của chúng tôi</h3>
+                <p>Bạn cũng có thể mua sản phẩm trực tiếp từ các cửa hàng của chúng tôi.</p>
               </div>
               <div class="location-content d-flex flex-wrap">
                 <div class="col-lg-6 col-sm-12">
                   <div class="content-box text-dark pe-4 mb-5">
-                    <h5 class="widget-title text-decoration-underline text-uppercase">Office</h5>
+                    <h5 class="widget-title text-decoration-underline text-uppercase">Văn phòng</h5>
                     <div class="contact-address pt-3">
-                      <p>730 Glenstone Ave 65802, Springfield, US</p>
+                      <p>730 Đường Nguyễn Văn Trỗi, Quận 1, TP.HCM, Việt Nam</p>
                     </div>
                     <div class="contact-number">
                       <p>
-                        <a href="#">+123 987 321</a>
+                        <a href="tel:+84 28 3878 333">+84 28 3878 333</a>
                       </p>
                       <p>
-                        <a href="#">+123 123 654</a>
+                        <a href="tel:+84 28 3878 444">+84 28 3878 444</a>
                       </p>
                     </div>
                     <div class="email-address">
                       <p>
-                        <a href="#">mail@yourinfo.com</a>
+                        <a href="mailto:info@soapcompany.com">info@soapcompany.com</a>
+
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-6 col-sm-12">
                   <div class="content-box">
-                    <h5 class="widget-title text-decoration-underline text-uppercase">USA</h5>
+                    <h5 class="widget-title text-decoration-underline text-uppercase">Văn phòng</h5>
+
                     <div class="contact-address pt-3">
-                      <p>730 Glenstone Ave 65802, Springfield, US</p>
+                      <p>123 Nguyễn Văn Linh, Quận 7, TP.HCM, Việt Nam</p>
                     </div>
                     <div class="contact-number">
                       <p>
-                        <a href="#">+123 987 321</a>
+                        <a href="tel:+84 28 3878 333">+84 28 3878 333</a>
                       </p>
                       <p>
-                        <a href="#">+123 123 654</a>
+                        <a href="tel:+84 28 3878 444">+84 28 3878 444</a>
                       </p>
                     </div>
                     <div class="email-address">
                       <p>
-                        <a href="#">mail@yourinfo.com</a>
+                        <a href="mailto:info@soapcompany.com">info@soapcompany.com</a>
+
                       </p>
                     </div>
                   </div>
@@ -385,101 +390,96 @@
         <div class="newsletter">
           <div class="row">
             <div class="col-lg-6 col-md-12 title mb-4">
-              <h2>Subscribe to Our Newsletter</h2>
-              <p>Get latest news, updates and deals directly mailed to your inbox</p> 				
+              <h2>Đăng ký nhận tin tức của chúng tôi</h2>
+              <p> Nhận tin tức mới nhất, cập nhật và ưu đãi trực tiếp gửi đến hộp thư của bạn</p> 				
             </div>
             <form class="col-lg-6 col-md-12 d-flex align-items-center">
               <div class="d-flex w-75 border-bottom border-dark py-2">
-                <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Your email address here">
-                <button class="btn border-0" type="button">Subscribe</button>
+                <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Địa chỉ email của bạn vào đây">
+                <button class="btn border-0" type="button">Đăng ký</button>
               </div>
             </form>
           </div> 			
         </div>
       </div>
     </section>
-    <footer id="footer" class="overflow-hidden padding-xlarge pb-0">
+    <footer id="footer" class="overflow-hidden padding-xlarge pb-0" style="background-color: #f5d6df;">
       <div class="container">
         <div class="row">
           <div class="footer-top-area pb-5">
             <div class="row d-flex flex-wrap justify-content-between">
               <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
                 <div class="footer-menu">
-                  <img src="images/main-logo.png" alt="logo" class="mb-2">
-                  <p>Nunc tristique facilisis consectetur vivamus ut porta porta aliquam vitae vehicula leo nullam urna lectus.</p>
+                  <a class="navbar-brand d-none d-lg-block me-0" href="index.html">
+                    <img src="images/main-logo.png" class="logo" width="70px" height="100px">
+                  </a>
+                  <p>Chúng tôi tự hào mang đến những sản phẩm xà phòng thủ công chất lượng cao, được làm từ những nguyên liệu tự nhiên tốt nhất.</p>
                 </div>
               </div>
               <div class="col-lg-2 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1200" data-aos-once="true">
                 <div class="footer-menu">
-                  <h4 class="widget-title pb-2">Quick Links</h4>
+                  <h4 class="widget-title pb-2">Liên Kết Nhanh</h4>
                   <ul class="menu-list list-unstyled">
                     <li class="menu-item pb-2">
-                      <a href="about.html">About</a>
+                      <a href="about.html">Giới Thiệu</a>
                     </li>
                     <li class="menu-item pb-2">
-                      <a href="shop.html">Shop</a>
+                      <a href="shop.html">Cửa Hàng</a>
                     </li>
                     <li class="menu-item pb-2">
-                      <a href="contact.html">Contact</a>
+                      <a href="contact.html">Liên Hệ</a>
                     </li>
                     <li class="menu-item pb-2">
-                      <a href="login.html">Account</a>
+                      <a href="login.html">Tài Khoản</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1400" data-aos-once="true">
                 <div class="footer-menu contact-item">
-                  <h4 class="widget-title pb-2">Contact info</h4>
+                  <h4 class="widget-title pb-2">Thông Tin Liên Hệ</h4>
                   <ul class="menu-list list-unstyled">
                     <li class="menu-item pb-2">
-                      <a href="#">Tea Berry, Marinette, USA</a>
+                      <a href="#">123 Đường Lê Lợi, Quận 1, TP.HCM</a>
                     </li>
                     <li class="menu-item pb-2">
-                      <a href="#">+55 111 222 333 44</a>
+                      <a href="#">+84 123 456 789</a>
                     </li>
                     <li class="menu-item pb-2">
-                      <a href="mailto:">yourinfo@gmail.com</a>
+                      <a href="mailto:">info@xabongcoba.com</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1600" data-aos-once="true">
                 <div class="footer-menu">
-                  <h4 class="widget-title pb-2">Social info</h4>
-                  <p>You can follow us on our social platforms to get updates.</p>
+                  <h4 class="widget-title pb-2">Mạng Xã Hội</h4>
+                  <p>Theo dõi chúng tôi trên các nền tảng mạng xã hội để cập nhật thông tin mới nhất.</p>
                   <div class="social-links">
                     <ul class="d-flex list-unstyled">
                       <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/profile.php?id=61567610646372" >
                           <svg class="facebook">
                             <use xlink:href="#facebook">
                           </svg>
                         </a>
                       </li>
+                      
                       <li>
-                        <a href="#">
+                        <a href="https://www.tiktok.com/@cobavnsoap" style="color: #aeaeae ">
+                         <i class="fab fa-tiktok" style="font-size: 0.85em;"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/cobavnsoap/">
                           <svg class="instagram">
                             <use xlink:href="#instagram">
                           </svg>
                         </a>
                       </li>
+                    
                       <li>
-                        <a href="#">
-                          <svg class="twitter">
-                            <use xlink:href="#twitter">
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <svg class="linkedin">
-                            <use xlink:href="#linkedin">
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
+                        <a href="https://www.youtube.com/channel/UC8fQR-avkHNKMTBbVNuuQAA">
                           <svg class="youtube">
                             <use xlink:href="#youtube">
                           </svg>
@@ -494,18 +494,19 @@
         </div>
         <hr>
       </div>
-    </footer>
-    <div id="footer-bottom">
-      <div class="container">
-        <div class="row d-flex flex-wrap justify-content-between">
-          <div class="col-12">
-            <div class="copyright">
-              <p>© Copyright 2024 Soapy. Template by <a href="https://templatesjungle.com/" target="_blank"><b>TemplatesJungle</b></a></p>
+      <div id="footer-bottom">
+        <div class="container">
+          <div class="row d-flex flex-wrap justify-content-between">
+            <div class="col-12">
+              <div class="copyright">
+                <p>© Bản quyền 2024 xà phòng cô ba . Tạo bởi: <a href="https://templatesjungle.com/" target="_blank"><b>Team Cô Ba Việt Nam</b></a> </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
+ 
     
     <script src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>

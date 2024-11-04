@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -79,7 +79,7 @@
     <div id="preloader">
       <div id="loader"></div>
     </div>
-    <header id="header" class="site-header border-bottom border-dark">
+     <header id="header" class="site-header border-bottom border-dark" >
       <nav id="header-nav" class="navbar navbar-expand-lg px-3">
         <div class="container">
           <a class="navbar-brand d-lg-none" href="index.html">
@@ -88,8 +88,8 @@
           <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
             <div class="offcanvas-header px-4 pb-0">
-              <a class="navbar-brand" href="index.html">
-                <img src="images/main-logo.png" class="logo">
+              <a class="navbar-brand d-none d-lg-block me-0" href="index.html">
+                <img src="images/main-logo.png" class="logo" width="70px" height="100px">
               </a>
               <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
             </div>
@@ -155,45 +155,26 @@
                 
 
                   <li class="nav-item">
-                    <a class="nav-link me-0" href="shop.html">Liên hệ</a>
+                    <a class="nav-link me-0" href="contact.html">Liên hệ</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link me-0" href="LOGIN.html" style=" width: 110PX;">Tài khoản</a>
                   </li>
                   <li class="cart-dropdown nav-item dropdown">
-                    <a class="nav-link dropdown-toggle me-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Giỏ hàng</a>
+                    <a class="nav-link dropdown-toggle me-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Giỏ hàng <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg></a>
                     <div class="dropdown-menu dropdown-menu-end p-3">
                       <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-primary">GIỎ HÀNG CỦA BẠN</span>
-                        <span class="badge bg-primary rounded-pill">2</span>
+                        <span class="badge bg-primary rounded-pill">0</span>
                       </h4>
                       <ul class="list-group mb-3">
-                        <li class="list-group-item bg-transparent border-dark d-flex justify-content-between lh-sm">
-                          <div>
-                            <h5 class="card-title fs-5 text-uppercase">
-                              <a href="single-product.html">Xà Phòng Oải Hương Dịu Nhẹ</a>
-                            </h5>
-                            <small class="text-body-secondary">Hỗn hợp tinh dầu oải hương làm dịu.</small>
-                          </div>
-                          <span class="text-primary">120.000đ</span>
-                        </li>
-                        <li class="list-group-item bg-transparent border-dark d-flex justify-content-between lh-sm">
-                          <div>
-                            <h5 class="card-title fs-5 text-uppercase">
-                              <a href="single-product.html">Xà Phòng Cam Chanh Sảng Khoái</a>
-                            </h5>
-                            <small class="text-body-secondary">Hỗn hợp tinh dầu cam chanh tươi mát.</small>
-                          </div>
-                          <span class="text-primary">870.000đ</span>
-                        </li>
-                        <li class="list-group-item bg-transparent border-dark d-flex justify-content-between">
-                          <span class="text-uppercase"><b>Tổng cộng (VNĐ)</b></span>
-                          <strong>990.000đ</strong>
-                        </li>
+                        
                       </ul>
                       <div class="d-flex flex-wrap justify-content-center">
                         <a href="cart.html" class="w-100 btn btn-dark mb-1" type="submit">Xem giỏ hàng</a>
-                        <a href="checkout.html" class="w-100 btn btn-primary" type="submit">Thanh toán</a>
+                        <a href="checkout.html" class="w-100 btn btn-primary" type="submit">Tiến hành thanh toán</a>
                       </div>
                     </div>
                   </li>
@@ -243,6 +224,7 @@
                 </select>
               </div>
             </div>
+            
             <div class="row product-content product-store">
               <div class="col-lg-4 col-md-6">
                 <div class="product-card mb-3 position-relative">
@@ -252,7 +234,7 @@
                     </a>
                     <div class="cart-concern position-absolute">
                       <div class="cart-button">
-                        <a href="#" class="btn">Thêm vào giỏ</a>
+                        <a href="#" class="btn" data-id="1">Thêm vào giỏ</a>
                       </div>
                     </div>
                   </div>
@@ -260,7 +242,7 @@
                     <h5 class="card-title fs-5 text-uppercase">
                       <a href="single-product.html">Xà Phòng Oải Hương Dịu Nhẹ</a>
                     </h5>
-                    <span class="item-price text-primary fs-3 fw-light">750.000đ</span>
+                    <span class="item-price text-primary fs-3 fw-light">65.000đ</span>
                   </div>
                 </div>
               </div>
@@ -272,15 +254,15 @@
                     </a>
                     <div class="cart-concern position-absolute">
                       <div class="cart-button">
-                        <a href="#" class="btn">Thêm vào giỏ</a>
+                        <a href="#" class="btn" data-id="2">Thêm vào giỏ</a>
                       </div>
                     </div>
                   </div>
                   <div class="card-detail text-center pt-3 pb-2">
                     <h5 class="card-title fs-5 text-uppercase">
-                      <a href="single-product.html">Xà Phòng Cam Chanh Sảng Khoái</a>
+                      <a href="single-product.html" class="id-01">Xà Phòng Cam Chanh Sảng Khoái</a>
                     </h5>
-                    <span class="item-price text-primary fs-3 fw-light">750.000đ</span>
+                    <span class="item-price text-primary fs-3 fw-light">65.000đ</span>
                   </div>
                 </div>
               </div>
@@ -300,7 +282,7 @@
                     <h5 class="card-title fs-5 text-uppercase">
                       <a href="single-product.html">Xà Phòng Bạc Hà Tươi Mát</a>
                     </h5>
-                    <span class="item-price text-primary fs-3 fw-light">750.000đ</span>
+                    <span class="item-price text-primary fs-3 fw-light">65.000đ</span>
                   </div>
                 </div>
               </div>
@@ -320,7 +302,7 @@
                     <h5 class="card-title fs-5 text-uppercase">
                       <a href="single-product.html">Xà Phòng Dừa Mềm Mịn</a>
                     </h5>
-                    <span class="item-price text-primary fs-3 fw-light">750.000đ</span>
+                    <span class="item-price text-primary fs-3 fw-light">65.000đ</span>
                   </div>
                 </div>
               </div>
@@ -340,7 +322,7 @@
                     <h5 class="card-title fs-5 text-uppercase">
                       <a href="single-product.html">Xà Phòng Mật Ong Hạnh Nhân</a>
                     </h5>
-                    <span class="item-price text-primary fs-3 fw-light">750.000đ</span>
+                    <span class="item-price text-primary fs-3 fw-light">65.000đ</span>
                   </div>
                 </div>
               </div>
@@ -360,7 +342,7 @@
                     <h5 class="card-title fs-5 text-uppercase">
                       <a href="single-product.html">Xà Phòng Yến Mạch Dịu Nhẹ</a>
                     </h5>
-                    <span class="item-price text-primary fs-3 fw-light">750.000đ</span>
+                    <span class="item-price text-primary fs-3 fw-light">65.000đ</span>
                   </div>
                 </div>
               </div>
@@ -380,7 +362,7 @@
                     <h5 class="card-title fs-5 text-uppercase">
                       <a href="single-product.html">Xà Phòng Khuynh Diệp Sảng Khoái</a>
                     </h5>
-                    <span class="item-price text-primary fs-3 fw-light">750.000đ</span>
+                    <span class="item-price text-primary fs-3 fw-light">65.000đ</span>
                   </div>
                 </div>
               </div>
@@ -400,7 +382,7 @@
                     <h5 class="card-title fs-5 text-uppercase">
                       <a href="single-product.html">Xà Phòng Hoa Hồng</a>
                     </h5>
-                    <span class="item-price text-primary fs-3 fw-light">750.000đ</span>
+                    <span class="item-price text-primary fs-3 fw-light">65.000đ</span>
                   </div>
                 </div>
               </div>
@@ -420,7 +402,7 @@
                     <h5 class="card-title fs-5 text-uppercase">
                       <a href="single-product.html">Xà Phòng Tràm Trà Thanh Lọc</a>
                     </h5>
-                    <span class="item-price text-primary fs-3 fw-light">750.000đ</span>
+                    <span class="item-price text-primary fs-3 fw-light">65.000đ</span>
                   </div>
                 </div>
               </div>
@@ -533,106 +515,103 @@
         </div>
       </div>
     </div>
-    <section id="newsletter" class="bg-light padding-medium" style="background-image: url(images/hero-img.jpg);">
-      <div class="container">
-        <div class="newsletter">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 title mb-4">
-              <h2>Đăng ký nhận bản tin</h2>
-              <p>Nhận tin tức, cập nhật và ưu đãi mới nhất trực tiếp qua email</p> 				
-            </div>
-            <form class="col-lg-6 col-md-12 d-flex align-items-center">
-              <div class="d-flex w-75 border-bottom border-dark py-2">
-                <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Nhập địa chỉ email của bạn">
-                <button class="btn border-0" type="button">Đăng ký</button>
-              </div>
-            </form>
-          </div> 			
+    <section id="banner" data-aos="fade" data-aos-once="true">
+      <div class="banner-content-1 position-relative" style="background:url('images/banner-img1.jpg') no-repeat left; background-size: cover; background-position: center; height: 400px;">
+        <div class="banner-content-text position-absolute" data-aos="fade" data-aos-delay="1000" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true" style="top: 75%;">
+          <h3 style="font-family: 'Cormorant Upright', serif; color: white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Bộ sưu tập bánh bèo</h3>
+          <a href="shop.html" class="btn" style="font-family: 'Sora', sans-serif;">Truy cập ngay</a>
+        </div>
+      </div>
+      <div class="banner-content-2 position-relative" style="background:url('images/banner-img2.jpg') no-repeat left; background-size: cover; background-position: center; height: 400px; width: 100%;">
+        <div class="banner-content-text position-absolute" data-aos="fade" data-aos-delay="1000" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true" style="top: 75%;">
+          <h3 style="font-family: 'Cormorant Upright', serif; color: white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Bộ sưu tập Noel</h3>
+          <a href="shop.html" class="btn" style="font-family: 'Sora', sans-serif;">Truy cập ngay</a>
+        </div>
+      </div>
+      <div class="banner-content-3 position-relative" style="background:url('images/banner-img3.jpg') no-repeat left; background-size: cover; background-position: center; height: 400px;">
+        <div class="banner-content-text position-absolute" data-aos="fade" data-aos-delay="1000" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true" style="top: 75%;">
+          <h3 style="font-family: 'Cormorant Upright', serif; color: white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Bộ sưu tập Tết</h3>
+          <a href="shop.html" class="btn" style="font-family: 'Sora', sans-serif;">Truy cập ngay</a>
         </div>
       </div>
     </section>
-    <footer id="footer" class="overflow-hidden padding-xlarge pb-0">
+    <footer id="footer" class="overflow-hidden padding-large pb-0" style="background-color: #f5d6df;">
       <div class="container">
         <div class="row">
           <div class="footer-top-area pb-5">
             <div class="row d-flex flex-wrap justify-content-between">
               <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
                 <div class="footer-menu">
-                  <img src="images/main-logo.png" alt="logo" class="mb-2">
-                  <p>Xà phòng thủ công với các thành phần tự nhiên, mang đến trải nghiệm làm sạch dịu nhẹ và nuôi dưỡng làn da.</p>
+                  <a class="navbar-brand d-none d-lg-block me-0" href="index.html">
+                    <img src="images/main-logo.png" class="logo" width="70px" height="100px">
+                  </a>
+                  <p>Chúng tôi tự hào mang đến những sản phẩm xà phòng thủ công chất lượng cao, được làm từ những nguyên liệu tự nhiên tốt nhất.</p>
                 </div>
               </div>
               <div class="col-lg-2 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1200" data-aos-once="true">
                 <div class="footer-menu">
-                  <h4 class="widget-title pb-2">Liên kết nhanh</h4>
+                  <h4 class="widget-title pb-2">Liên Kết Nhanh</h4>
                   <ul class="menu-list list-unstyled">
                     <li class="menu-item pb-2">
-                      <a href="about.html">Giới thiệu</a>
+                      <a href="about.html">Giới Thiệu</a>
                     </li>
                     <li class="menu-item pb-2">
-                      <a href="shop.html">Cửa hàng</a>
+                      <a href="shop.html">Cửa Hàng</a>
                     </li>
                     <li class="menu-item pb-2">
-                      <a href="contact.html">Liên hệ</a>
+                      <a href="contact.html">Liên Hệ</a>
                     </li>
                     <li class="menu-item pb-2">
-                      <a href="login.html">Tài khoản</a>
+                      <a href="login.html">Tài Khoản</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1400" data-aos-once="true">
                 <div class="footer-menu contact-item">
-                  <h4 class="widget-title pb-2">Thông tin liên hệ</h4>
+                  <h4 class="widget-title pb-2">Thông Tin Liên Hệ</h4>
                   <ul class="menu-list list-unstyled">
                     <li class="menu-item pb-2">
-                      <a href="#">Tea Berry, Marinette, USA</a>
+                      <a href="#">123 Đường Lê Lợi, Quận 1, TP.HCM</a>
                     </li>
                     <li class="menu-item pb-2">
-                      <a href="#">+55 111 222 333 44</a>
+                      <a href="#">+84 123 456 789</a>
                     </li>
                     <li class="menu-item pb-2">
-                      <a href="mailto:">yourinfo@gmail.com</a>
+                      <a href="mailto:">info@xabongcoba.com</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1600" data-aos-once="true">
                 <div class="footer-menu">
-                  <h4 class="widget-title pb-2">Mạng xã hội</h4>
-                  <p>Theo dõi chúng tôi trên các nền tảng xã hội để cập nhật tin tức mới nhất.</p>
+                  <h4 class="widget-title pb-2">Mạng Xã Hội</h4>
+                  <p>Theo dõi chúng tôi trên các nền tảng mạng xã hội để cập nhật thông tin mới nhất.</p>
                   <div class="social-links">
                     <ul class="d-flex list-unstyled">
                       <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/profile.php?id=61567610646372" >
                           <svg class="facebook">
                             <use xlink:href="#facebook">
                           </svg>
                         </a>
                       </li>
+                      
                       <li>
-                        <a href="#">
+                        <a href="https://www.tiktok.com/@cobavnsoap" style="color: #aeaeae ">
+                         <i class="fab fa-tiktok" style="font-size: 0.85em;"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/cobavnsoap/">
                           <svg class="instagram">
                             <use xlink:href="#instagram">
                           </svg>
                         </a>
                       </li>
+                    
                       <li>
-                        <a href="#">
-                          <svg class="twitter">
-                            <use xlink:href="#twitter">
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <svg class="linkedin">
-                            <use xlink:href="#linkedin">
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
+                        <a href="https://www.youtube.com/channel/UC8fQR-avkHNKMTBbVNuuQAA">
                           <svg class="youtube">
                             <use xlink:href="#youtube">
                           </svg>
@@ -647,22 +626,92 @@
         </div>
         <hr>
       </div>
-    </footer>
-    <div id="footer-bottom">
-      <div class="container">
-        <div class="row d-flex flex-wrap justify-content-between">
-          <div class="col-12">
-            <div class="copyright">
-              <p>© Bản quyền 2024 Soapy. Thiết kế bởi <a href="https://templatesjungle.com/" target="_blank"><b>TemplatesJungle</b></a></p>
+      <div id="footer-bottom">
+        <div class="container">
+          <div class="row d-flex flex-wrap justify-content-between">
+            <div class="col-12">
+              <div class="copyright">
+                <p>© Bản quyền 2024 xà phòng cô ba . Tạo bởi: <a href="https://templatesjungle.com/" target="_blank"><b>Team Cô Ba Việt Nam</b></a> </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
+ 
     
     <script src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script>
+      let cart = [];
+  
+      function addToCart(product) {
+          const index = cart.findIndex(item => item.id === product.id);
+  
+          if (index !== -1) {
+              cart[index].quantity += 1;
+          } else {
+              cart.push({ ...product, quantity: 1 });
+          }
+          updateCartDisplay();
+      }
+  
+      function updateCartDisplay() {
+          const cartList = document.querySelector('.dropdown-menu .list-group');
+          cartList.innerHTML = ''; // Xóa nội dung cũ
+  
+          let totalPrice = 0;
+          let totalItems = 0;
+  
+          cart.forEach(product => {
+              const listItem = document.createElement('li');
+              listItem.classList.add('list-group-item', 'bg-transparent', 'border-dark', 'd-flex', 'justify-content-between', 'lh-sm');
+  
+              listItem.innerHTML = `
+                  <div>
+                      <h5 class="card-title fs-5 text-uppercase">
+                          <a href="single-product.html">${product.name}</a>
+                      </h5>
+                      <small class="text-body-secondary">${product.description}</small>
+                  </div>
+                  <span class="text-primary">${product.price}đ x ${product.quantity}</span>
+              `;
+  
+              cartList.appendChild(listItem);
+  
+              totalPrice += product.price * product.quantity;
+              totalItems += product.quantity;
+          });
+  
+          const totalItem = document.createElement('li');
+          totalItem.classList.add('list-group-item', 'bg-transparent', 'border-dark', 'd-flex', 'justify-content-between');
+          totalItem.innerHTML = `
+              <span class="text-uppercase"><b>Total (VND)</b></span>
+              <strong>${totalPrice.toLocaleString()}đ</strong>
+          `;
+          cartList.appendChild(totalItem);
+  
+          document.querySelector('.dropdown-menu .badge').textContent = totalItems;
+      }
+  
+      // Gắn sự kiện click cho các nút "Thêm vào giỏ"
+      document.querySelectorAll('.cart-button .btn').forEach(button => {
+          button.addEventListener('click', event => {
+              event.preventDefault();
+              const productCard = button.closest('.product-card');
+              const product = {
+                  id: button.getAttribute('data-id'),
+                  name: productCard.querySelector('.card-title a').innerText,
+                  description: productCard.querySelector('.text-body-secondary') ? productCard.querySelector('.text-body-secondary').innerText : '',
+                  price: parseFloat(productCard.querySelector('.item-price').innerText.replace('đ', '').replace('.', '').trim())
+              };
+              addToCart(product);
+          });
+      });
+  </script>
+
+  
   </body>
 </html>

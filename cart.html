@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -88,6 +88,9 @@
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 24 24">
         <path fill="currentColor" d="M19 11H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2Z"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="baseline-clear" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z"/>
       </symbol>
     </svg>
     
@@ -182,31 +185,10 @@
                     <div class="dropdown-menu dropdown-menu-end p-3">
                       <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-primary">GIỎ HÀNG CỦA BẠN</span>
-                        <span class="badge bg-primary rounded-pill">2</span>
+                        <span class="badge bg-primary rounded-pill">0</span>
                       </h4>
                       <ul class="list-group mb-3">
-                        <li class="list-group-item bg-transparent border-dark d-flex justify-content-between lh-sm">
-                          <div>
-                            <h5 class="card-title fs-5 text-uppercase">
-                              <a href="single-product.html">Gentle Lavender Bliss</a>
-                            </h5>
-                            <small class="text-body-secondary">Một sự kết hợp bình tĩnh của tinh dầu oải hương.</small>
-                          </div>
-                          <span class="text-primary">$120</span>
-                        </li>
-                        <li class="list-group-item bg-transparent border-dark d-flex justify-content-between lh-sm">
-                          <div>
-                            <h5 class="card-title fs-5 text-uppercase">
-                              <a href="single-product.html">Citrus Splash Delight</a>
-                            </h5>
-                            <small class="text-body-secondary">Sự kích thích từ sự kết hợp của tinh dầu cam.</small>
-                          </div>
-                          <span class="text-primary">$870</span>
-                        </li>
-                        <li class="list-group-item bg-transparent border-dark d-flex justify-content-between">
-                          <span class="text-uppercase"><b>Tổng cộng (USD)</b></span>
-                          <strong>$990</strong>
-                        </li>
+                        
                       </ul>
                       <div class="d-flex flex-wrap justify-content-center">
                         <a href="cart.html" class="w-100 btn btn-dark mb-1" type="submit">Xem giỏ hàng</a>
@@ -226,278 +208,165 @@
         <div class="container">
           <div class="row">
             <div class="text-center padding-large no-padding-bottom">
-              <h1>Blog</h1>
+              <h1>Giỏ hàng</h1>
               <div class="breadcrumbs">
                 <span class="item">
                   <a href="index.html">Trang chủ ></a>
                 </span>
-                <span class="item">Blog</span>
+                <span class="item">Giỏ hàng</span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="post-grid padding-large">
+    <section class="shopify-cart padding-large">
       <div class="container">
-        <div class="row d-flex flex-wrap">
-          <aside class="col-md-3">
-            <div class="sidebar mb-5">
-              <div class="widget-menu">
-                <div class="widget-search-bar">
-                  <form role="search" method="get" class="position-relative d-flex justify-content-between align-items-center border-bottom border-dark py-1">
-                    <input class="search-field" placeholder="Tìm kiếm" type="search">
-                    <div class="search-icon position-absolute end-0">
-                      <a href="#">
-                        <svg width="26" height="26" class="search">
-                          <use xlink:href="#search"></use>
-                        </svg>
-                      </a>
-                    </div>
-                  </form>
-                </div> 
-              </div>
-              <div class="widget-product-categories pt-5">
-                <h5 class="widget-title text-decoration-underline text-uppercase">Danh mục</h5>
-                <ul class="product-categories sidebar-list list-unstyled">
-                  <li class="cat-item">
-                    <a href="/collections/categories">Tất cả</a>
-                  </li>
-                  <li class="cat-item">
-                    <a href="">Làm xà phòng</a>
-                  </li>
-                  <li class="cat-item">
-                    <a href="">Mẹo chăm sóc da</a>
-                  </li>
-                  <li class="cat-item">
-                    <a href="">Tập trung vào thành phần</a>
-                  </li>
-                  <li class="cat-item">
-                    <a href="">Bền vững</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="widget-product-tags pt-3">
-                <h5 class="widget-title text-decoration-underline text-uppercase">Thẻ</h5>
-                <ul class="product-tags sidebar-list list-unstyled">
-                  <li class="tags-item">
-                    <a href="">Tự làm</a>
-                  </li>
-                  <li class="tags-item">
-                    <a href="">Sức khỏe da</a>
-                  </li>
-                  <li class="tags-item">
-                    <a href="">Phỏng vấn</a>
-                  </li>
-                  <li class="tags-item">
-                    <a href="">Mùa</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="widget sidebar-recent-post pt-3">
-                <h5 class="widget-title text-decoration-underline text-uppercase">Bài viết mới nhất</h5>
-                <div class="sidebar-post-item">
-                  <div class="d-flex flex-wrap align-items-center mb-3">
-                    <div class="col-lg-4">
-                      <div class="card-image pe-3 pb-2">
-                        <a href="single-post.html">
-                          <img src="images/post-small-image1.jpg" alt="blog" class="img-fluid">
-                        </a>
+        <div class="row">
+          <div class="table-responsive">
+            <table class="table">
+              <thead class="text-uppercase">
+                <tr>
+                  <th scope="col">Sản phẩm</th>
+                  <th scope="col">Số lượng</th>
+                  <th scope="col">Tổng cộng</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-bottom border-dark">
+                  <td class="align-middle border-0" scope="row">
+                    <div class="cart-product-detail d-flex align-items-center">
+                      <div class="card-image">
+                        <img src="images/cart-img1.jpg" alt="cloth" class="img-fluid">
+                      </div>
+                      <div class="card-detail ps-3">
+                        <h5 class="card-title fs-5 text-uppercase">
+                          <a href="#">Hương thơm Lavender dịu nhẹ</a>
+                        </h5>
+                        <span class="item-price text-primary fs-3 fw-light">₫65,000</span>
+
                       </div>
                     </div>
-                    <div class="col-lg-8">
-                      <div class="card-content">
-                        <h4 class="card-title">
-                          <a href="single-post.html">5 Cách Sử Dụng Mảnh Xà Phòng và Giảm Lãng Phí</a>
-                        </h4>
+                  </td>
+                  <td class="align-middle border-0">
+                    <div class="input-group product-qty" style="max-width: 150px;">
+                      <span class="input-group-btn">
+                        <button type="button" class="quantity-left-minus" data-type="minus" data-field="">
+                          <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
+                        </button>
+                      </span>
+                      <input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="1" min="1" max="100" required>
+                      <span class="input-group-btn">
+                        <button type="button" class="quantity-right-plus" data-type="plus" data-field="">
+                          <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="align-middle border-0">                        <span class="item-price text-primary fs-3 fw-light">₫65,000</span>
+                    </td>
+                  <td class="align-middle border-0 cart-remove">
+                    <a href="#">
+                      <svg width="32px" height="32px">
+                        <use xlink:href="#baseline-clear"></use>
+                      </svg>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="border-bottom border-dark">
+                  <td class="align-middle border-0" scope="row">
+                    <div class="cart-product-detail d-flex align-items-center">
+                      <div class="card-image">
+                        <img src="images/cart-img2.jpg" alt="cloth" class="img-fluid">
+                      </div>
+                      <div class="card-detail ps-3">
+                        <h5 class="card-title fs-5 text-uppercase">
+                          <a href="#">Hương thơm Cam tươi mát</a>
+                        </h5>
+                        <span class="item-price text-primary fs-3 fw-light">₫65,000</span>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="sidebar-post-item">
-                  <div class="d-flex flex-wrap align-items-center mb-3">
-                    <div class="col-lg-4">
-                      <div class="card-image pe-3 pb-2">
-                        <a href="single-post.html">
-                          <img src="images/post-small-image2.jpg" alt="blog" class="img-fluid">
-                        </a>
-                      </div>
+                  </td>
+                  <td class="align-middle border-0">
+                    <div class="input-group product-qty" style="max-width: 150px;">
+                      <span class="input-group-btn">
+                        <button type="button" class="quantity-left-minus" data-type="minus" data-field="">
+                          <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
+                        </button>
+                      </span>
+                      <input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="1" min="1" max="100" required>
+                      <span class="input-group-btn">
+                        <button type="button" class="quantity-right-plus" data-type="plus" data-field="">
+                          <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </span>
                     </div>
-                    <div class="col-lg-8">
-                      <div class="card-content">
-                        <h4 class="card-title">
-                          <a href="single-post.html">Những Hiểu Lầm Thông Thường Về Xà Phòng và Chăm Sóc Da</a>
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="sidebar-post-item">
-                  <div class="d-flex flex-wrap align-items-center mb-3">
-                    <div class="col-lg-4">
-                      <div class="card-image pe-3 pb-2">
-                        <a href="single-post.html">
-                          <img src="images/post-small-image3.jpg" alt="blog" class="img-fluid">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div class="card-content">
-                        <h4 class="card-title">
-                          <a href="single-post.html">Hiểu Về Thành Phần và Quy Trình Sản Xuất</a>
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="widget sidebar-social-links pt-3">
-                <h5 class="widget-title text-decoration-underline text-uppercase">Liên Kết Mạng Xã Hội</h5>
-                <ul class="sidebar-list list-unstyled">
-                  <li class="tags-item">
-                    <a href="">Facebook</a>
-                  </li>
-                  <li class="tags-item">
-                    <a href="">Instagram</a>
-                  </li>
-                  <li class="tags-item">
-                    <a href="">Twitter</a>
-                  </li>
-                  <li class="tags-item">
-                    <a href="">Pinterest</a>
-                  </li>
-                  <li class="tags-item">
-                    <a href="">Youtube</a>
-                  </li>
-                </ul>
-              </div>
+                  </td>
+                  <td class="align-middle border-0">                        <span class="item-price text-primary fs-3 fw-light">₫65,000</span>
+                  </td>
+                  <td class="align-middle border-0 cart-remove">
+                    <a href="#">
+                      <svg width="32px" height="32px">
+                        <use xlink:href="#baseline-clear"></use>
+                      </svg>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="cart-bottom d-flex flex-wrap justify-content-between align-items-center pt-2">
+              <form action="#" class="d-flex flex-wrap justify-content-between">
+                <input type="text" class="border border-dark rounded-pill p-0 ps-2 me-1 mb-2" required="" placeholder="Mã giảm giá">
+                <a href="#" class="btn btn-dark mb-2" type="submit">Áp dụng mã giảm giá</a>
+              </form>
+              <a href="#" class="btn btn-dark mb-2">Cập nhật giỏ hàng</a>
             </div>
-          </aside>
-          <main class="col-md-9">
-            <div class="row">
-              <div class="col-lg-6 mb-2">
-                <div class="card border-0 rounded-0">
-                  <div class="card-image zoom-effect">
-                    <img src="images/post-item1.jpg" alt="blog-img" class="zoom-in img-fluid">
-                  </div>
-                </div>
-                <div class="card-body text-capitalize">
-                  <div class="card-meta fs-5">
-                    <span class="meta-date">22 Tháng 2, 2024</span>
-                    <span class="meta-category">/ <a href="blog.html">Mẹo</a></span>
-                  </div>
-                  <h3 class="card-title">
-                    <a href="single-post.html">Lợi Ích của Xà Phòng Thủ Công So Với Các Thương Hiệu Thương Mại</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="col-lg-6 mb-2">
-                <div class="card border-0 rounded-0">
-                  <div class="card-image zoom-effect">
-                    <img src="images/post-item3.jpg" alt="blog-img" class="zoom-in img-fluid">
-                  </div>
-                </div>
-                <div class="card-body text-capitalize">
-                  <div class="card-meta fs-5">
-                    <span class="meta-date">22 Tháng 2, 2024</span>
-                    <span class="meta-category">/ <a href="blog.html">Mẹo</a></span>
-                  </div>
-                  <h3 class="card-title">
-                    <a href="single-post.html">Làm Thế Nào Để Chọn Đúng Loại Xà Phòng Cho Loại Da Của Bạn</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="col-lg-6 mb-2">
-                <div class="card border-0 rounded-0">
-                  <div class="card-image zoom-effect">
-                    <img src="images/post-item2.jpg" alt="blog-img" class="zoom-in img-fluid">
-                  </div>
-                </div>
-                <div class="card-body text-capitalize">
-                  <div class="card-meta fs-5">
-                    <span class="meta-date">22 Tháng 2, 2024</span>
-                    <span class="meta-category">/ <a href="blog.html">Mẹo</a></span>
-                  </div>
-                  <h3 class="card-title">
-                    <a href="single-post.html">Tự Làm Xà Phòng: Hướng Dẫn Cho Người Mới Bắt Đầu</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="col-lg-6 mb-2">
-                <div class="card border-0 rounded-0">
-                  <div class="card-image zoom-effect">
-                    <img src="images/post-item4.jpg" alt="blog-img" class="zoom-in img-fluid">
-                  </div>
-                </div>
-                <div class="card-body text-capitalize">
-                  <div class="card-meta fs-5">
-                    <span class="meta-date">27 Tháng 2, 2024</span>
-                    <span class="meta-category">/ <a href="blog.html">Mẹo</a></span>
-                  </div>
-                  <h3 class="card-title">
-                    <a href="single-post.html">Tác Động Môi Trường Của Bao Bì Xà Phòng Truyền Thống</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="col-lg-6 mb-2">
-                <div class="card border-0 rounded-0">
-                  <div class="card-image zoom-effect">
-                    <img src="images/post-item5.jpg" alt="blog-img" class="zoom-in img-fluid">
-                  </div>
-                </div>
-                <div class="card-body text-capitalize">
-                  <div class="card-meta fs-5">
-                    <span class="meta-date">09 Tháng 3, 2024</span>
-                    <span class="meta-category">/ <a href="blog.html">Mẹo</a></span>
-                  </div>
-                  <h3 class="card-title">
-                    <a href="single-post.html">Tinh Dầu Trong Xà Phòng: Lợi Ích Thư Giãn</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="col-lg-6 mb-2">
-                <div class="card border-0 rounded-0">
-                  <div class="card-image zoom-effect">
-                    <img src="images/post-item6.jpg" alt="blog-img" class="zoom-in img-fluid">
-                  </div>
-                </div>
-                <div class="card-body text-capitalize">
-                  <div class="card-meta fs-5">
-                    <span class="meta-date">09 Tháng 3, 2024</span>
-                    <span class="meta-category">/ <a href="blog.html">Mẹo</a></span>
-                  </div>
-                  <h3 class="card-title">
-                    <a href="single-post.html">Lịch Sử Làm Xà Phòng: Từ Thời Cổ Đại Đến Nghệ Thuật Thủ Công Hiện Đại</a>
-                  </h3>
-                </div>
-              </div>              
+          </div>
+          <div class="cart-totals padding-medium">
+            <h3 class="pb-4">Tổng cộng giỏ hàng</h3>
+            <div class="total-price pb-5">
+              <table cellspacing="0" class="table text-uppercase">
+                <tbody>
+                  <tr class="subtotal pt-2 pb-2 border-top border-bottom border-dark">
+                    <th>Tổng cộng</th>
+                    <td class="align-middle border-0" data-title="Tổng cộng">
+                      <span class="price-amount amount text-primary">
+                        <bdi>
+                          <span class="price-currency-symbol">$</span>2,370.00
+                        </bdi>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr class="order-total pt-2 pb-2 border-bottom border-dark">
+                    <th>Tổng</th>
+                    <td class="align-middle border-0" data-title="Tổng">
+                      <span class="price-amount amount text-primary">
+                        <bdi>
+                          <span class="price-currency-symbol">$</span>2,370.00</bdi>
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <nav class="navigation paging-navigation text-center padding-medium" role="navigation">
-              <div class="pagination loop-pagination d-flex justify-content-center align-items-center">
-                <a href="#" class="d-flex pe-2">
-                  <svg width="24" height="24"><use xlink:href="#angle-left"></use></svg>
-                </a>
-                <span aria-current="page" class="page-numbers current pe-3">1</span>
-                <a class="page-numbers pe-3" href="#">2</a>
-                <a class="page-numbers pe-3" href="#">3</a>
-                <a class="page-numbers pe-3" href="#">4</a>
-                <a class="page-numbers" href="#">5</a>
-                <a href="#" class="d-flex ps-2">
-                  <svg width="24" height="24"><use xlink:href="#angle-right"></use></svg>
-                </a>
-              </div>
-            </nav>
-          </main>
+            <div class="button-wrap">
+              <button class="btn btn-dark me-2 mb-2">Cập nhật giỏ hàng</button>
+              <button class="btn btn-dark me-2 mb-2">Tiếp tục mua sắm</button>
+              <button class="btn btn-primary me-2 mb-2">Tiến hành thanh toán</button>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </section> 
     <section id="newsletter" class="bg-light padding-medium" style="background-image: url(images/hero-img.jpg);">
       <div class="container">
         <div class="newsletter">
           <div class="row">
             <div class="col-lg-6 col-md-12 title mb-4">
               <h2>Đăng ký nhận bản tin của chúng tôi</h2>
-              <p>Nhận tin tức, cập nhật và ưu đãi mới nhất trực tiếp gửi vào hộp thư của bạn</p> 				
+              <p>Nhận tin tức, cập nhật và ưu đãi mới nhất trực tiếp trong hộp thư đến của bạn</p> 				
             </div>
             <form class="col-lg-6 col-md-12 d-flex align-items-center">
               <div class="d-flex w-75 border-bottom border-dark py-2">
@@ -509,110 +378,109 @@
         </div>
       </div>
     </section>
-    <footer id="footer" class="overflow-hidden padding-xlarge pb-0" style="background-color: #f5d6df;">
-      <div class="container">
-        <div class="row">
-          <div class="footer-top-area pb-5">
-            <div class="row d-flex flex-wrap justify-content-between">
-              <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
-                <div class="footer-menu">
-                  <a class="navbar-brand d-none d-lg-block me-0" href="index.html">
-                    <img src="images/main-logo.png" class="logo" width="70px" height="100px">
-                  </a>
-                  <p>Chúng tôi tự hào mang đến những sản phẩm xà phòng thủ công chất lượng cao, được làm từ những nguyên liệu tự nhiên tốt nhất.</p>
-                </div>
-              </div>
-              <div class="col-lg-2 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1200" data-aos-once="true">
-                <div class="footer-menu">
-                  <h4 class="widget-title pb-2">Liên Kết Nhanh</h4>
-                  <ul class="menu-list list-unstyled">
-                    <li class="menu-item pb-2">
-                      <a href="about.html">Giới Thiệu</a>
-                    </li>
-                    <li class="menu-item pb-2">
-                      <a href="shop.html">Cửa Hàng</a>
-                    </li>
-                    <li class="menu-item pb-2">
-                      <a href="contact.html">Liên Hệ</a>
-                    </li>
-                    <li class="menu-item pb-2">
-                      <a href="login.html">Tài Khoản</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1400" data-aos-once="true">
-                <div class="footer-menu contact-item">
-                  <h4 class="widget-title pb-2">Thông Tin Liên Hệ</h4>
-                  <ul class="menu-list list-unstyled">
-                    <li class="menu-item pb-2">
-                      <a href="#">123 Đường Lê Lợi, Quận 1, TP.HCM</a>
-                    </li>
-                    <li class="menu-item pb-2">
-                      <a href="#">+84 123 456 789</a>
-                    </li>
-                    <li class="menu-item pb-2">
-                      <a href="mailto:">info@xabongcoba.com</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1600" data-aos-once="true">
-                <div class="footer-menu">
-                  <h4 class="widget-title pb-2">Mạng Xã Hội</h4>
-                  <p>Theo dõi chúng tôi trên các nền tảng mạng xã hội để cập nhật thông tin mới nhất.</p>
-                  <div class="social-links">
-                    <ul class="d-flex list-unstyled">
-                      <li>
-                        <a href="https://www.facebook.com/profile.php?id=61567610646372" >
-                          <svg class="facebook">
-                            <use xlink:href="#facebook">
-                          </svg>
-                        </a>
-                      </li>
-                      
-                      <li>
-                        <a href="https://www.tiktok.com/@cobavnsoap" style="color: #aeaeae ">
-                         <i class="fab fa-tiktok" style="font-size: 0.85em;"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com/cobavnsoap/">
-                          <svg class="instagram">
-                            <use xlink:href="#instagram">
-                          </svg>
-                        </a>
-                      </li>
-                    
-                      <li>
-                        <a href="https://www.youtube.com/channel/UC8fQR-avkHNKMTBbVNuuQAA">
-                          <svg class="youtube">
-                            <use xlink:href="#youtube">
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-      </div>
-      <div id="footer-bottom">
-        <div class="container">
+  <footer id="footer" class="overflow-hidden padding-xlarge pb-0" style="background-color: #f5d6df;">
+    <div class="container">
+      <div class="row">
+        <div class="footer-top-area pb-5">
           <div class="row d-flex flex-wrap justify-content-between">
-            <div class="col-12">
-              <div class="copyright">
-                <p>© Bản quyền 2024 xà phòng cô ba . Tạo bởi: <a href="https://templatesjungle.com/" target="_blank"><b>Team Cô Ba Việt Nam</b></a> </p>
+            <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
+              <div class="footer-menu">
+                <a class="navbar-brand d-none d-lg-block me-0" href="index.html">
+                  <img src="images/main-logo.png" class="logo" width="70px" height="100px">
+                </a>
+                <p>Chúng tôi tự hào mang đến những sản phẩm xà phòng thủ công chất lượng cao, được làm từ những nguyên liệu tự nhiên tốt nhất.</p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1200" data-aos-once="true">
+              <div class="footer-menu">
+                <h4 class="widget-title pb-2">Liên Kết Nhanh</h4>
+                <ul class="menu-list list-unstyled">
+                  <li class="menu-item pb-2">
+                    <a href="about.html">Giới Thiệu</a>
+                  </li>
+                  <li class="menu-item pb-2">
+                    <a href="shop.html">Cửa Hàng</a>
+                  </li>
+                  <li class="menu-item pb-2">
+                    <a href="contact.html">Liên Hệ</a>
+                  </li>
+                  <li class="menu-item pb-2">
+                    <a href="login.html">Tài Khoản</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1400" data-aos-once="true">
+              <div class="footer-menu contact-item">
+                <h4 class="widget-title pb-2">Thông Tin Liên Hệ</h4>
+                <ul class="menu-list list-unstyled">
+                  <li class="menu-item pb-2">
+                    <a href="#">123 Đường Lê Lợi, Quận 1, TP.HCM</a>
+                  </li>
+                  <li class="menu-item pb-2">
+                    <a href="#">+84 123 456 789</a>
+                  </li>
+                  <li class="menu-item pb-2">
+                    <a href="mailto:">info@xabongcoba.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1600" data-aos-once="true">
+              <div class="footer-menu">
+                <h4 class="widget-title pb-2">Mạng Xã Hội</h4>
+                <p>Theo dõi chúng tôi trên các nền tảng mạng xã hội để cập nhật thông tin mới nhất.</p>
+                <div class="social-links">
+                  <ul class="d-flex list-unstyled">
+                    <li>
+                      <a href="https://www.facebook.com/profile.php?id=61567610646372" >
+                        <svg class="facebook">
+                          <use xlink:href="#facebook">
+                        </svg>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.tiktok.com/@cobavnsoap" style="color: #aeaeae ">
+                       <i class="fab fa-tiktok" style="font-size: 0.85em;"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/cobavnsoap/">
+                        <svg class="instagram">
+                          <use xlink:href="#instagram">
+                        </svg>
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.youtube.com/channel/UC8fQR-avkHNKMTBbVNuuQAA">
+                        <svg class="youtube">
+                          <use xlink:href="#youtube">
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-   
+      <hr>
+    </div>
+    <div id="footer-bottom">
+      <div class="container">
+        <div class="row d-flex flex-wrap justify-content-between">
+          <div class="col-12">
+            <div class="copyright">
+              <p>© Bản quyền 2024 xà phòng cô ba . Tạo bởi: <a href="https://templatesjungle.com/" target="_blank"><b>Team Cô Ba Việt Nam</b></a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
     
     <script src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>

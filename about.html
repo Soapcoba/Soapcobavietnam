@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Soapy - Handmade Soap eCommerce Website Template</title>
+    <title>Soapy</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -76,7 +76,7 @@
     <div id="preloader">
       <div id="loader"></div>
     </div>
-    <header id="header" class="site-header border-bottom border-dark">
+    <header id="header" class="site-header border-bottom border-dark" >
       <nav id="header-nav" class="navbar navbar-expand-lg px-3">
         <div class="container">
           <a class="navbar-brand d-lg-none" href="index.html">
@@ -85,8 +85,8 @@
           <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
             <div class="offcanvas-header px-4 pb-0">
-              <a class="navbar-brand" href="index.html">
-                <img src="images/main-logo.png" class="logo">
+              <a class="navbar-brand d-none d-lg-block me-0" href="index.html">
+                <img src="images/main-logo.png" class="logo" width="70px" height="100px">
               </a>
               <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
             </div>
@@ -152,13 +152,15 @@
                 
 
                   <li class="nav-item">
-                    <a class="nav-link me-0" href="shop.html">Liên hệ</a>
+                    <a class="nav-link me-0" href="contact.html">Liên hệ</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link me-0" href="LOGIN.html" style=" width: 110PX;">Tài khoản</a>
                   </li>
                   <li class="cart-dropdown nav-item dropdown">
-                    <a class="nav-link dropdown-toggle me-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Giỏ hàng</a>
+                    <a class="nav-link dropdown-toggle me-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Giỏ hàng <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg></a>
                     <div class="dropdown-menu dropdown-menu-end p-3">
                       <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-primary">GIỎ HÀNG CỦA BẠN</span>
@@ -170,7 +172,7 @@
                             <h5 class="card-title fs-5 text-uppercase">
                               <a href="single-product.html">Gentle Lavender Bliss</a>
                             </h5>
-                            <small class="text-body-secondary">A calming blend of lavender essential oils.</small>
+                            <small class="text-body-secondary">Một sự kết hợp bình tĩnh của tinh dầu oải hương.</small>
                           </div>
                           <span class="text-primary">$120</span>
                         </li>
@@ -179,18 +181,18 @@
                             <h5 class="card-title fs-5 text-uppercase">
                               <a href="single-product.html">Citrus Splash Delight</a>
                             </h5>
-                            <small class="text-body-secondary">Invigorating blend of citrus essential oils.</small>
+                            <small class="text-body-secondary">Sự kích thích từ sự kết hợp của tinh dầu cam.</small>
                           </div>
                           <span class="text-primary">$870</span>
                         </li>
                         <li class="list-group-item bg-transparent border-dark d-flex justify-content-between">
-                          <span class="text-uppercase"><b>Total (USD)</b></span>
+                          <span class="text-uppercase"><b>Tổng cộng (USD)</b></span>
                           <strong>$990</strong>
                         </li>
                       </ul>
                       <div class="d-flex flex-wrap justify-content-center">
-                        <a href="cart.html" class="w-100 btn btn-dark mb-1" type="submit">View Cart</a>
-                        <a href="checkout.html" class="w-100 btn btn-primary" type="submit">Go to checkout</a>
+                        <a href="cart.html" class="w-100 btn btn-dark mb-1" type="submit">Xem giỏ hàng</a>
+                        <a href="checkout.html" class="w-100 btn btn-primary" type="submit">Tiến hành thanh toán</a>
                       </div>
                     </div>
                   </li>
@@ -206,12 +208,12 @@
         <div class="container">
           <div class="row">
             <div class="text-center padding-large no-padding-bottom">
-              <h1>About</h1>
+              <h1>Giới thiệu</h1>
               <div class="breadcrumbs">
                 <span class="item">
-                  <a href="index.html">Home ></a>
+                  <a href="index.html">Trang chủ ></a>
                 </span>
-                <span class="item">About</span>
+                <span class="item">Giới thiệu</span>
               </div>
             </div>
           </div>
@@ -229,8 +231,7 @@
                 </svg>
               </span>
               <div class="icon-box-content">
-                <h4 class="card-title">Free delivery</h3>
-                <p>Consectetur adipi elit lorem ipsum dolor sit amet.</p>
+                <h4 class="card-title">Giao hàng miễn phí</h3>
               </div>
             </div>
           </div>
@@ -242,8 +243,7 @@
                 </svg>
               </div>
               <div class="icon-box-content">
-                <h4 class="card-title">Quality guarantee</h3>
-                <p>Dolor sit amet orem ipsu mcons ectetur adipi elit.</p>
+                <h4 class="card-title">Bảo hành chất lượng</h3>
               </div>
             </div>
           </div>
@@ -255,8 +255,7 @@
                 </svg>
               </div>
               <div class="icon-box-content">
-                <h4 class="card-title">Daily offers</h3>
-                <p>Amet consectetur adipi elit loreme ipsum dolor sit.</p>
+                <h4 class="card-title">Ưu đãi hàng ngày</h3>
               </div>
             </div>
           </div>
@@ -268,8 +267,7 @@
                 </svg>
               </div>
               <div class="icon-box-content">
-                <h4 class="card-title">100% secure payment</h3>
-                <p>Rem Lopsum dolor sit amet, consectetur adipi elit.</p>
+                <h4 class="card-title">Thanh toán an toàn 100%</h3>
               </div>
             </div>
           </div>
@@ -285,9 +283,9 @@
             </div>
           </div>
           <div class="about-content col-lg-4 m-auto top-0 end-0 bottom-0">
-            <span class="title-accent fs-6 text-uppercase">About us</span>
-            <h3 class="py-3">Welcome to Soapy, your one-stop destination for luxurious, handmade soaps.</h3>
-            <p>We believe in the power of natural ingredients to nourish and rejuvenate your skin. Our soaps are crafted with care, using only the finest botanicals and essential oils. Each bar is a testament to our commitment to quality and sustainability. Join us on a journey to rediscover experience the difference of Soapy.</p>
+            <span class="title-accent fs-6 text-uppercase">Về chúng tôi</span>
+            <h3 class="py-3">Chào mừng đến với Xà phòng Cô Ba Việt Nam, điểm đến một cửa hàng cho các xà phòng handmade chất lượng.</h3>
+            <p>Chúng tôi tin vào sức mạnh của các thành phần tự nhiên để nuôi dưỡng và tái sinh làn da của bạn. Xà phòng của chúng tôi được chế tác với sự chăm sóc, sử dụng chỉ các thành phần thực vật và dầu thơm tốt nhất. Mỗi thanh là một chứng nhận cho cam kết của chúng tôi về chất lượng và bền vững. Tham gia chúng tôi trên một hành trình để tái khám phá và trải nghiệm sự khác biệt của xà phòng Cô Ba Việt Nam.</p>
           </div>
         </div>
       </div>
@@ -296,31 +294,31 @@
       <div class="container">
         <div class="row">
           <div class="offset-md-2 col-md-8">
-            <h3 class="display-7 text-center mb-5" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">What our customers says</h3>
+            <h3 class="display-7 text-center mb-5" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">Những gì khách hàng của chúng tôi nói</h3>
             <div class="review-content position-relative" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1500" data-aos-once="true">
               <div class="swiper testimonial-swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide text-center d-flex justify-content-center">
                     <div class="review-item">
-                      <blockquote class="fs-3 fw-light">“A pellen tesque pretium feugiat vel morbi sagittis lorem habi tasse cursus. Suspen dise tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis.”</blockquote>
+                      <blockquote class="fs-3 fw-light">“Tôi đã sử dụng xà phòng của Cô Ba Việt Nam và thấy rằng chúng thực sự hiệu quả trong việc dưỡng da. Da của tôi trở nên mềm mại và tươi sáng hơn.”</blockquote>
                       <div class="author-detail">
-                        <div class="name fw-bold text-uppercase pt-2">Anna garcia</div>
+                        <div class="name fw-bold text-uppercase pt-2">Bà Hậu</div>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide text-center d-flex justify-content-center">
                     <div class="review-item">
-                      <blockquote class="fs-3 fw-light">“A pellen tesque pretium feugiat vel morbi sagittis lorem habi tasse cursus. Suspen dise tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis.”</blockquote>
+                      <blockquote class="fs-3 fw-light">“Sau khi sử dụng xà phòng của Cô Ba Việt Nam, tôi đã trải nghiệm sự thay đổi rõ rệt trên da của mình. Da trở nên mềm mại, tươi sáng và khỏe mạnh hơn, đồng thời các vấn đề về da như mụn, thô ráp cũng được cải thiện đáng kể. Tôi thực sự ấn tượng với hiệu quả của sản phẩm này.”</blockquote>
                       <div class="author-detail">
-                        <div class="name fw-bold text-uppercase pt-2">Anna garcia</div>
+                        <div class="name fw-bold text-uppercase pt-2">Bà Nhi</div>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide text-center d-flex justify-content-center">
                     <div class="review-item">
-                      <blockquote class="fs-3 fw-light">“A pellen tesque pretium feugiat vel morbi sagittis lorem habi tasse cursus. Suspen dise tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis.”</blockquote>
+                      <blockquote class="fs-3 fw-light">“Tôi khuyên bạn nên thử xà phòng của Cô Ba Việt Nam. Chúng có thể giúp da bạn trở nên mềm mại, tươi sáng hơn và thậm chí cải thiện các vấn đề về da như mụn, thô ráp. Tôi đã trải nghiệm sự thay đổi rõ rệt trên da của mình sau khi sử dụng sản phẩm này.”</blockquote>
                       <div class="author-detail">
-                        <div class="name fw-bold text-uppercase pt-2">Anna garcia</div>
+                        <div class="name fw-bold text-uppercase pt-2">Bà Duyên</div>
                       </div>
                     </div>
                   </div>
@@ -340,106 +338,101 @@
         </div>
       </div>
     </section>
-    <section id="newsletter" class="bg-light padding-medium" style="background-image: url(images/hero-img.jpg);">
+    <section id="newsletter" class="bg-light padding-medium "style="background-image: url(images/hero-img.jpg);">
       <div class="container">
         <div class="newsletter">
           <div class="row">
             <div class="col-lg-6 col-md-12 title mb-4">
-              <h2>Subscribe to Our Newsletter</h2>
-              <p>Get latest news, updates and deals directly mailed to your inbox</p> 				
+              <h2>Đăng ký nhận tin tức</h2>
+              <p>Nhận tin tức mới nhất, cập nhật và ưu đãi trực tiếp đến hộp thư của bạn</p> 				
             </div>
             <form class="col-lg-6 col-md-12 d-flex align-items-center">
               <div class="d-flex w-75 border-bottom border-dark py-2">
-                <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Your email address here">
-                <button class="btn border-0" type="button">Subscribe</button>
+                <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Địa chỉ email của bạn tại đây">
+                <button class="btn border-0" type="button">Đăng ký</button>
               </div>
             </form>
           </div> 			
         </div>
       </div>
     </section>
-    <footer id="footer" class="overflow-hidden padding-xlarge pb-0">
+    <footer id="footer" class="overflow-hidden padding-xlarge pb-0" style="background-color: #f5d6df;">
       <div class="container">
         <div class="row">
           <div class="footer-top-area pb-5">
             <div class="row d-flex flex-wrap justify-content-between">
               <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
                 <div class="footer-menu">
-                  <img src="images/main-logo.png" alt="logo" class="mb-2">
-                  <p>Nunc tristique facilisis consectetur vivamus ut porta porta aliquam vitae vehicula leo nullam urna lectus.</p>
+                  <a class="navbar-brand d-none d-lg-block me-0" href="index.html">
+                    <img src="images/main-logo.png" class="logo" width="70px" height="100px">
+                  </a>
+                  <p>Chúng tôi tự hào mang đến những sản phẩm xà phòng thủ công chất lượng cao, được làm từ những nguyên liệu tự nhiên tốt nhất.</p>
                 </div>
               </div>
               <div class="col-lg-2 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1200" data-aos-once="true">
                 <div class="footer-menu">
-                  <h4 class="widget-title pb-2">Quick Links</h4>
+                  <h4 class="widget-title pb-2">Liên Kết Nhanh</h4>
                   <ul class="menu-list list-unstyled">
                     <li class="menu-item pb-2">
-                      <a href="about.html">About</a>
+                      <a href="about.html">Giới Thiệu</a>
                     </li>
                     <li class="menu-item pb-2">
-                      <a href="shop.html">Shop</a>
+                      <a href="shop.html">Cửa Hàng</a>
                     </li>
                     <li class="menu-item pb-2">
-                      <a href="contact.html">Contact</a>
+                      <a href="contact.html">Liên Hệ</a>
                     </li>
                     <li class="menu-item pb-2">
-                      <a href="login.html">Account</a>
+                      <a href="login.html">Tài Khoản</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1400" data-aos-once="true">
                 <div class="footer-menu contact-item">
-                  <h4 class="widget-title pb-2">Contact info</h4>
+                  <h4 class="widget-title pb-2">Thông Tin Liên Hệ</h4>
                   <ul class="menu-list list-unstyled">
                     <li class="menu-item pb-2">
-                      <a href="#">Tea Berry, Marinette, USA</a>
+                      <a href="#">123 Đường Lê Lợi, Quận 1, TP.HCM</a>
                     </li>
                     <li class="menu-item pb-2">
-                      <a href="#">+55 111 222 333 44</a>
+                      <a href="#">+84 123 456 789</a>
                     </li>
                     <li class="menu-item pb-2">
-                      <a href="mailto:">yourinfo@gmail.com</a>
+                      <a href="mailto:">info@xabongcoba.com</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1600" data-aos-once="true">
                 <div class="footer-menu">
-                  <h4 class="widget-title pb-2">Social info</h4>
-                  <p>You can follow us on our social platforms to get updates.</p>
+                  <h4 class="widget-title pb-2">Mạng Xã Hội</h4>
+                  <p>Theo dõi chúng tôi trên các nền tảng mạng xã hội để cập nhật thông tin mới nhất.</p>
                   <div class="social-links">
                     <ul class="d-flex list-unstyled">
                       <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/profile.php?id=61567610646372" >
                           <svg class="facebook">
                             <use xlink:href="#facebook">
                           </svg>
                         </a>
                       </li>
+                      
                       <li>
-                        <a href="#">
+                        <a href="https://www.tiktok.com/@cobavnsoap" style="color: #aeaeae ">
+                         <i class="fab fa-tiktok" style="font-size: 0.85em;"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/cobavnsoap/">
                           <svg class="instagram">
                             <use xlink:href="#instagram">
                           </svg>
                         </a>
                       </li>
+                    
                       <li>
-                        <a href="#">
-                          <svg class="twitter">
-                            <use xlink:href="#twitter">
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <svg class="linkedin">
-                            <use xlink:href="#linkedin">
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
+                        <a href="https://www.youtube.com/channel/UC8fQR-avkHNKMTBbVNuuQAA">
                           <svg class="youtube">
                             <use xlink:href="#youtube">
                           </svg>
@@ -454,18 +447,19 @@
         </div>
         <hr>
       </div>
-    </footer>
-    <div id="footer-bottom">
-      <div class="container">
-        <div class="row d-flex flex-wrap justify-content-between">
-          <div class="col-12">
-            <div class="copyright">
-              <p>© Copyright 2024 Soapy. Template by <a href="https://templatesjungle.com/" target="_blank"><b>TemplatesJungle</b></a></p>
+      <div id="footer-bottom">
+        <div class="container">
+          <div class="row d-flex flex-wrap justify-content-between">
+            <div class="col-12">
+              <div class="copyright">
+                <p>© Bản quyền 2024 xà phòng cô ba . Tạo bởi: <a href="https://templatesjungle.com/" target="_blank"><b>Team Cô Ba Việt Nam</b></a> </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
+ 
     
     <script src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Soapy - Mẫu Website Thương Mại Điện Tử Xà Phòng Thủ Công</title>
+    <title>Soapy - Handmade Soap eCommerce Website Template</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">  
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="author" content="">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -226,325 +227,197 @@
         <div class="container">
           <div class="row">
             <div class="text-center padding-large no-padding-bottom">
-              <h1>Chi tiết sản phẩm</h1>
+              <h1>Thanh toán</h1>
               <div class="breadcrumbs">
                 <span class="item">
                   <a href="index.html">Trang chủ ></a>
                 </span>
-                <span class="item">Chi tiết sản phẩm</span>
+                <span class="item">Thanh toán</span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="single-product padding-large">
+    <section class="shopify-cart checkout-wrap padding-large">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="row product-preview">
-              <div class="swiper thumb-swiper col-3">
-                <div class="swiper-wrapper d-flex flex-wrap align-content-start">
-                  <div class="swiper-slide">
-                    <img src="images/product-thumbnail-1.jpg" alt="" class="img-fluid">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/product-thumbnail-2.jpg" alt="" class="img-fluid">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/product-thumbnail-3.jpg" alt="" class="img-fluid">
-                  </div>
+        <form class="form-group">
+          <div class="row d-flex flex-wrap">
+            <div class="col-lg-6">
+              <h3 class="pb-4">Chi tiết thanh toán</h3>
+              <div class="billing-details">
+                <div class="py-3">
+                  <label for="fname">Tên*</label>
+                  <input type="text" id="fname" name="firstname" class="w-100">
                 </div>
-              </div>
-              <div class="swiper large-swiper overflow-hidden col-9">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="images/product-large-1.jpg" alt="single-product" class="img-fluid">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/product-large-2.jpg" alt="single-product" class="img-fluid">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/product-large-3.jpg" alt="single-product" class="img-fluid">
-                  </div>
+
+                <div class="py-3">
+                  <label for="lname">Họ*</label>
+                  <input type="text" id="lname" name="lastname" class="w-100">
+                </div>
+
+                <div class="py-3">
+                  <label for="cname">Tên công ty (tùy chọn)*</label>
+                  <input type="text" id="cname" name="companyname" class="w-100">
+                </div>
+
+                
+
+                <div class="py-3">
+                  <label for="address">Địa chỉ*</label>
+                  <input type="text" id="adr" name="address" placeholder="Số nhà và tên đường" class="w-100">
+                  <input type="text" id="adr" name="address" placeholder="Căn hộ,v.v." class="w-100">
+                </div>
+
+                <div class="py-3">
+                  <label for="city">Thị trấn / Thành phố *</label>
+                  <input type="text" id="city" name="city" class="w-100">
+                </div>
+
+                <div class="py-3">
+                  <label for="state">Tỉnh / Thành phố *</label>
+                  <select class="w-100" aria-label="Chọn một mục">
+                    <option selected="" hidden="">Chọn tỉnh/thành phố</option>
+                    <option value="1">An Giang</option>
+                    <option value="2">Bà Rịa - Vũng Tàu</option>
+                    <option value="3">Bạc Liêu</option>
+                    <option value="4">Bắc Giang</option>
+                    <option value="5">Bắc Kạn</option>
+                    <option value="6">Bạc Ninh</option>
+                    <option value="7">Bà Rịa - Vũng Tàu</option>
+                    <option value="8">Bến Tre</option>
+                    <option value="9">Bình Định</option>
+                    <option value="10">Bình Dương</option>
+                    <option value="11">Bình Phước</option>
+                    <option value="12">Bình Thuận</option>
+                    <option value="13">Cà Mau</option>
+                    <option value="14">Cần Thơ</option>
+                    <option value="15">Cao Bằng</option>
+                    <option value="16">Đà Nẵng</option>
+                    <option value="17">Đắk Lắk</option>
+                    <option value="18">Đắk Nông</option>
+                    <option value="19">Điện Biên</option>
+                    <option value="20">Đồng Nai</option>
+                    <option value="21">Đồng Tháp</option>
+                    <option value="22">Gia Lai</option>
+                    <option value="23">Hà Giang</option>
+                    <option value="24">Hà Nam</option>
+                    <option value="25">Hà Nội</option>
+                    <option value="26">Hà Tĩnh</option>
+                    <option value="27">Hải Dương</option>
+                    <option value="28">Hải Phòng</option>
+                    <option value="29">Hậu Giang</option>
+                    <option value="30">Hòa Bình</option>
+                    <option value="31">Hồ Chí Minh</option>
+                    <option value="32">Hưng Yên</option>
+                    <option value="33">Khánh Hòa</option>
+                    <option value="34">Kiên Giang</option>
+                    <option value="35">Kon Tum</option>
+                    <option value="36">Lai Châu</option>
+                    <option value="37">Lâm Đồng</option>
+                    <option value="38">Lạng Sơn</option>
+                    <option value="39">Lào Cai</option>
+                    <option value="40">Long An</option>
+                    <option value="41">Nam Định</option>
+                    <option value="42">Nghệ An</option>
+                    <option value="43">Ninh Bình</option>
+                    <option value="44">Ninh Thuận</option>
+                    <option value="45">Phú Thọ</option>
+                    <option value="46">Quảng Bình</option>
+                    <option value="47">Quảng Nam</option>
+                    <option value="48">Quảng Ngãi</option>
+                    <option value="49">Quảng Ninh</option>
+                    <option value="50">Quảng Trị</option>
+                    <option value="51">Sóc Trăng</option>
+                    <option value="52">Sơn La</option>
+                    <option value="53">Tây Ninh</option>
+                    <option value="54">Thái Bình</option>
+                    <option value="55">Thái Nguyên</option>
+                    <option value="56">Thanh Hóa</option>
+                    <option value="57">Thừa Thiên Huế</option>
+                    <option value="58">Tiền Giang</option>
+                    <option value="59">Trà Vinh</option>
+                    <option value="60">Tuyên Quang</option>
+                    <option value="61">Vĩnh Long</option>
+                    <option value="62">Vĩnh Phúc</option>
+                    <option value="63">Yên Bái</option>
+                  </select>
+                </div>
+
+              
+
+                <div class="py-3">
+                  <label for="email">Điện thoại *</label>
+                  <input type="text" id="phone" name="phone" class="w-100">
+                </div>
+                
+                <div class="py-3">
+                  <label for="email">Địa chỉ email *</label>
+                  <input type="text" id="email" name="email" class="w-100">
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="product-info">
-              <div class="element-header">
-                <h3 class="product-title my-3">Xà Phòng Than Hoạt Tính Detox</h3>
-                <div class="rating-container d-flex align-items-center my-3">
-                  <div class="rating" data-rating="1" onclick=rate(1)>
-                    <svg class="bi" width="16" height="16"><use xlink:href="#star-fill"></use></svg>
-                  </div>
-                  <div class="rating" data-rating="1" onclick=rate(1)>
-                    <svg class="bi" width="16" height="16"><use xlink:href="#star-fill"></use></svg>
-                  </div>
-                  <div class="rating" data-rating="1" onclick=rate(1)>
-                    <svg class="bi" width="16" height="16"><use xlink:href="#star-fill"></use></svg>
-                  </div>
-                  <div class="rating" data-rating="1" onclick=rate(1)>
-                    <svg class="bi" width="16" height="16"><use xlink:href="#star-half"></use></svg>
-                  </div>
-                  <div class="rating" data-rating="1" onclick=rate(1)>
-                    <svg class="bi" width="16" height="16"><use xlink:href="#star-empty"></use></svg>
-                  </div>
-                  <span class="rating-count lh-normal">(3.5)</span>
-                </div>
+            <div class="col-lg-6">
+              <h3 class="pb-4">Thông tin bổ sung</h3>
+              <div class="billing-details">
+                <label for="fname">Ghi chú đơn hàng (tùy chọn)</label>
+                <textarea class="w-100" placeholder="Ghi chú về đơn hàng của bạn. Ví dụ: ghi chú đặc biệt cho giao hàng."></textarea>
               </div>
-              <div class="product-price my-3">
-                <span class="fs-1 text-primary">65.000đ</span>
-                <del>154.000đ</del>
-              </div>
-              <p>Sản phẩm làm sạch sâu với thành phần than hoạt tính giúp detox và làm sạch da hiệu quả. Công thức dịu nhẹ phù hợp với mọi loại da.</p>
-              <hr>
-              <div class="cart-wrap">
-                <div class="color-options product-select my-3">
-                  <div class="color-toggle" data-option-index="0">
-                    <h4 class="item-title text-decoration-underline text-uppercase">Màu sắc:</h4>
-                    <ul class="select-list list-unstyled d-flex mb-0">
-                      <li class="select-item me-3" data-val="Green" title="Xanh lá">
-                        <a href="#">Xanh lá</a>
-                      </li>
-                      <li class="select-item me-3" data-val="Orange" title="Cam">
-                        <a href="#">Cam</a>
-                      </li>
-                      <li class="select-item me-3" data-val="Red" title="Đỏ">
-                        <a href="#">Đỏ</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="swatch product-select" data-option-index="1">
-                  <h4 class="item-title text-decoration-underline text-uppercase">Kích thước:</h4>
-                  <ul class="select-list list-unstyled d-flex mb-0">
-                    <li data-value="S" class="select-item me-3">
-                      <a href="#">S</a>
-                    </li>
-                    <li data-value="M" class="select-item me-3">
-                      <a href="#">M</a>
-                    </li>
-                    <li data-value="L" class="select-item me-3">
-                      <a href="#">L</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="product-quantity my-3">
-                  <div class="item-title">
-                    <l>Còn 2 sản phẩm</l>
-                  </div>
-                  <div class="stock-button-wrap d-flex flex-wrap align-items-center">
-                    <div class="product-quantity">
-                      <div class="input-group product-qty" style="max-width: 150px;">
-                        <span class="input-group-btn">
-                          <button type="button" class="quantity-left-minus" data-type="minus" data-field="">
-                            <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                          </button>
-                        </span>
-                        <input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="1" min="1" max="100" required>
-                        <span class="input-group-btn">
-                          <button type="button" class="quantity-right-plus" data-type="plus" data-field="">
-                            <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                          </button>
-                        </span>
-                      </div>                          
-                    </div>
-                  </div>
-                </div>
-                <div class="action-buttons my-4 d-flex flex-wrap">
-                  <a href="#" class="btn btn-dark me-2 mb-1">Mua ngay</a>
-                  <a href="#" class="btn btn-dark">Thêm vào giỏ</a>
-                </div>
-              </div>
-              <hr>
-              <div class="meta-product">
-                <div class="meta-item d-flex mb-1">
-                  <span class="text-uppercase me-2">Mã SP:</span>
-                  <ul class="select-list list-unstyled d-flex mb-0">
-                    <li data-value="S" class="select-item">1223</li>
-                  </ul>
-                </div>
-                <div class="meta-item d-flex mb-1">
-                  <span class="text-uppercase me-2">Danh mục:</span>
-                  <ul class="select-list list-unstyled d-flex mb-0">
-                    <li data-value="S" class="select-item">
-                      <a href="#">Xà phòng thanh</a>,
-                    </li>
-                    <li data-value="S" class="select-item">
-                      <a href="#">Xà phòng nước</a>,
-                    </li>
-                    <li data-value="S" class="select-item">
-                      <a href="#">Bộ quà tặng</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="meta-item d-flex mb-1">
-                  <span class="text-uppercase me-2">Thẻ:</span>
-                  <ul class="select-list list-unstyled d-flex mb-0">
-                    <li data-value="S" class="select-item">
-                      <a href="#">Hương thơm</a>,
-                    </li>
-                    <li data-value="S" class="select-item">
-                      <a href="#">Loại da</a>,
-                    </li>
-                    <li data-value="S" class="select-item">
-                      <a href="#">Thân thiện môi trường</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>    
-    <section class="product-tabs">
-      <div class="container">
-        <div class="row">
-          <div class="tabs-listing">
-            <nav>
-              <div class="nav nav-tabs d-flex justify-content-center py-3" id="nav-tab" role="tablist">
-                <button class="nav-link text-uppercase active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Mô tả</button>
-                <button class="nav-link text-uppercase" id="nav-information-tab" data-bs-toggle="tab" data-bs-target="#nav-information" type="button" role="tab" aria-controls="nav-information" aria-selected="false">Thông tin bổ sung</button>
-                <button class="nav-link text-uppercase" id="nav-shipping-tab" data-bs-toggle="tab" data-bs-target="#nav-shipping" type="button" role="tab" aria-controls="nav-shipping" aria-selected="false">Vận chuyển & Đổi trả</button>
-                <button class="nav-link text-uppercase" id="nav-review-tab" data-bs-toggle="tab" data-bs-target="#nav-review" type="button" role="tab" aria-controls="nav-review" aria-selected="false">Đánh giá</button>
-              </div>
-            </nav>
-            <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <p>Mô tả sản phẩm</p>
-                <p>Xà phòng là một sản phẩm rất tốt cho làn da. Nó được làm từ các nguyên liệu tự nhiên, không gây kích ứng cho da. Xà phòng còn giúp làm sạch da, loại bỏ bã nhờn và bụi bẩn, giúp da trở nên sạch sẽ và mịn màng hơn. Ngoài ra, xà phòng cũng có thể giúp dưỡng ẩm cho da, giữ cho da luôn mềm mại và tươi trẻ. Đặc biệt, xà phòng còn có khả năng cân bằng độ pH của da, giúp da trở nên khỏe mạnh và tươi trẻ hơn.</p>
-              </div>
-              <div class="tab-pane fade" id="nav-information" role="tabpanel" aria-labelledby="nav-information-tab">
-                <p>Xà phòng được làm từ các nguyên liệu tự nhiên, mang lại cảm giác thoải mái và tốt cho da.</p>
-                <p>Thông tin bổ sung về xà phòng:</p>
-                <ul>
-                  <li>Nguyên liệu: Dầu dừa, dầu ô liu, dầu hạnh nhân, và các loại tinh dầu khác.</li>
-                  <li>Ưu điểm: Giúp dưỡng ẩm, làm sạch, và cân bằng độ pH của da.</li>
-                  <li>Đối tượng sử dụng: Phù hợp với mọi loại da, kể cả da nhạy cảm.</li>
-                  <li>Cách sử dụng: Sử dụng 2-3 lần một tuần để đạt hiệu quả tốt nhất.</li>
-                </ul>
-              </div>
-              <div class="tab-pane fade" id="nav-shipping" role="tabpanel" aria-labelledby="nav-shipping-tab">
-                <p>Chính sách đổi trả</p>
-                <p>Chính sách đổi trả của chúng tôi được thiết kế để đảm bảo sự hài lòng của khách hàng. Nếu bạn không hài lòng với sản phẩm, bạn có thể đổi trả trong vòng 30 ngày kể từ ngày nhận hàng. Sản phẩm phải được trả lại trong tình trạng nguyên vẹn, bao gồm cả bao bì và các tài liệu kèm theo.</p>
-                <p>Để đổi trả sản phẩm, vui lòng liên hệ với chúng tôi qua email hoặc điện thoại để được hướng dẫn thêm. Chúng tôi sẽ không chấp nhận các sản phẩm đã được sử dụng, bị hư hỏng hoặc không có bao bì gốc.</p>
-                <p>Vận chuyển</p>
-                <p>Chúng tôi cung cấp vận chuyển toàn quốc với các phương thức vận chuyển khác nhau để đáp ứng nhu cầu của khách hàng. Thời gian vận chuyển sẽ tùy thuộc vào vị trí của bạn và phương thức vận chuyển được chọn.</p>
-              </div>
-              <div class="tab-pane fade" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
-                <div class="review-box review-style d-flex flex-wrap justify-content-between">
-                  <div class="review-item d-flex">
-                    <div class="image-holder">
-                      <img src="images/review-image1.jpg" alt="review">
-                    </div>
-                    <div class="review-content">
-                      <div class="rating-container d-flex align-items-center">
-                        <div class="rating">
-                          <svg class="bi" width="16" height="16"><use xlink:href="#star-fill"></use></svg>
-                        </div>
-                        <div class="rating">
-                          <svg class="bi" width="16" height="16"><use xlink:href="#star-fill"></use></svg>
-                        </div>
-                        <div class="rating">
-                          <svg class="bi" width="16" height="16"><use xlink:href="#star-fill"></use></svg>
-                        </div>
-                        <div class="rating">
-                          <svg class="bi" width="16" height="16"><use xlink:href="#star-fill"></use></svg>
-                        </div>
-                        <div class="rating">
-                          <svg class="bi" width="16" height="16"><use xlink:href="#star-fill"></use></svg>
-                        </div>
-                        <span class="rating-count">(5.0)</span>
-                      </div>
-                      <div class="review-header">
-                        <span class="author-name">Tom Johnson</span>
-                        <span class="review-date">- 07/05/2022</span>
-                      </div>
-                      <p>Đây là một sản phẩm tuyệt vời! Tôi đã sử dụng nó và thấy da mình trở nên sạch sẽ và mịn màng hơn.</p>
-                    </div>
-                  </div>
-                  <div class="review-item d-flex">
-                    <div class="image-holder">
-                      <img src="images/review-image2.jpg" alt="review">
-                    </div>                    
-                    <div class="review-content">
-                      <div class="rating-container d-flex align-items-center">
-                        <div class="rating">
-                          <svg class="bi" width="16" height="16"><use xlink:href="#star-fill"></use></svg>
-                        </div>
-                        <div class="rating">
-                          <svg class="bi" width="16" height="16"><use xlink:href="#star-fill"></use></svg>
-                        </div>
-                        <div class="rating">
-                          <svg class="bi" width="16" height="16"><use xlink:href="#star-fill"></use></svg>
-                        </div>
-                        <div class="rating">
-                          <svg class="bi" width="16" height="16"><use xlink:href="#star-fill"></use></svg>
-                        </div>
-                        <div class="rating">
-                          <svg class="bi" width="16" height="16"><use xlink:href="#star-fill"></use></svg>
-                        </div>
-                        <span class="rating-count">(5.0)</span>
-                      </div>
-                      <div class="review-header">
-                        <span class="author-name">Jenny Willis</span>
-                        <span class="review-date">- 07/05/2022</span>
-                      </div>
-                      <p>Đây là một sản phẩm tuyệt vời! Tôi đã sử dụng nó và thấy da mình trở nên sạch sẽ và mịn màng hơn.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="add-review margin-small">
-                  <h3>Thêm đánh giá</h3>
-                  <p>Địa chỉ email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu *</p>
-                  <div class="review-rating py-2">
-                    <span class="my-2">Đánh giá của bạn *</span>
-                    <div class="rating-container d-flex align-items-center">
-                      <div class="rating">
-                        <svg class="bi" width="16" height="16"><use xlink:href="#star-empty"></use></svg>
-                      </div>
-                      <div class="rating">
-                        <svg class="bi" width="16" height="16"><use xlink:href="#star-empty"></use></svg>
-                      </div>
-                      <div class="rating">
-                        <svg class="bi" width="16" height="16"><use xlink:href="#star-empty"></use></svg>
-                      </div>
-                      <div class="rating">
-                        <svg class="bi" width="16" height="16"><use xlink:href="#star-empty"></use></svg>
-                      </div>
-                      <div class="rating">
-                        <svg class="bi" width="16" height="16"><use xlink:href="#star-empty"></use></svg>
-                      </div>
-                    </div>
-                  </div>
-                  <input type="file" class="jfilestyle py-2 border-0" data-text="Chọn tệp của bạn">
-                  <form id="form">
-                    <div class="py-3">
-                      <label>Tên của bạn *</label>
-                      <input type="text" name="name" placeholder="Viết tên của bạn ở đây" class="w-100">
-                    </div>
-                    <div class="py-3">
-                      <label>Email của bạn *</label>
-                      <input type="text" name="email" placeholder="Viết email của bạn ở đây" class="w-100">
-                    </div>
-                    <div class="py-3">
-                      <label>Đánh giá của bạn *</label>
-                      <textarea placeholder="Viết đánh giá của bạn ở đây" class="w-100"></textarea>
-                    </div>
-                    <label class="py-3">
-                      <input type="checkbox" required="" class="d-inline">
-                      <span>Lưu tên của tôi, email và trang web trong trình duyệt này cho lần bình luận kế tiếp.</span>
+              <div class="your-order mt-5">
+                <h3 class="pb-4">Tổng cộng giỏ hàng</h3>
+                <div class="total-price">
+                  <table cellspacing="0" class="table">
+                    <tbody>
+                      <tr class="subtotal border-top border-bottom border-dark pt-2 pb-2 text-uppercase">
+                        <th>Tổng cộng</th>
+                        <td data-title="Tổng cộng">
+                          <span class="price-amount amount text-primary ps-5">
+                            <bdi>
+                              135,000 <span class="price-currency-symbol">VND</span> </bdi>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr class="order-total border-bottom border-dark pt-2 pb-2 text-uppercase">
+                        <th>Tổng</th>
+                        <td data-title="Tổng">
+                          <span class="price-amount amount text-primary ps-5">
+                            <bdi>
+                              135,000 <span class="price-currency-symbol">VND</span> </bdi>
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="list-group mt-5 mb-3">
+                    <label class="list-group-item p-0 bg-transparent d-flex gap-2 border-0">
+                      <input class="form-check-input p-0 flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios1" value="" checked>
+                      <span>
+                        <div class="fw-300 text-uppercase">Chuyển khoản ngân hàng trực tiếp</div>
+                        <p class="d-block">Vui lòng thanh toán trực tiếp vào tài khoản ngân hàng của chúng tôi. Vui lòng sử dụng ID đơn hàng của bạn. Đơn hàng của bạn sẽ được gửi đi sau khi tiền đã được xác nhận trong tài khoản của chúng tôi.</p>
+                      </span>
                     </label>
-                    <button type="submit" name="submit" class="btn btn-dark w-100 my-3">Gửi</button>
-                  </form>
+                   
+                    <label class="list-group-item p-0 bg-transparent d-flex gap-2 border-0">
+                      <input class="form-check-input p-0 flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios3" value="">
+                      <span>
+                        <div class="fw-300 text-uppercase">Thanh toán khi nhận hàng</div>
+                        <p class="d-block">Thanh toán bằng tiền mặt khi nhận hàng.</p>
+                      </span>
+                    </label>
+                    <label class="list-group-item p-0 bg-transparent d-flex gap-2 border-0">
+                      <input class="form-check-input p-0 flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios3" value="">
+                      <span>
+                        <div class="fw-300 text-uppercase">Paypal</div>
+                        <p class="d-block">Thanh toán qua PayPal; bạn có thể thanh toán bằng thẻ tín dụng nếu bạn không có tài khoản PayPal.</p>
+                      </span>
+                    </label>
+                  </div>
+                  <button type="submit" name="submit" class="btn btn-dark w-100">Đặt hàng</button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </section>
     <section id="newsletter" class="bg-light padding-medium" style="background-image: url(images/hero-img.jpg);">
@@ -552,31 +425,13 @@
         <div class="newsletter">
           <div class="row">
             <div class="col-lg-6 col-md-12 title mb-4">
-              <h2>Đăng ký nhận bản tin</h2>
-              <p>Nhận tin tức, cập nhật và ưu đãi mới nhất trực tiếp qua email</p> 				
+              <h2>Đăng ký nhận bản tin của chúng tôi</h2>
+              <p>Nhận tin tức, cập nhật và ưu đãi mới nhất trực tiếp trong hộp thư đến của bạn</p> 				
             </div>
             <form class="col-lg-6 col-md-12 d-flex align-items-center">
               <div class="d-flex w-75 border-bottom border-dark py-2">
-                <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Nhập địa chỉ email của bạn">
+                <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Địa chỉ email của bạn ở đây">
                 <button class="btn border-0" type="button">Đăng ký</button>
-              </div>
-            </form>
-          </div> 			
-        </div>
-      </div>
-    </section>
-    <section id="newsletter" class="bg-light padding-medium" style="background-image: url(images/hero-img.jpg);">
-      <div class="container">
-        <div class="newsletter">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 title mb-4">
-              <h2>Subscribe to Our Newsletter</h2>
-              <p>Get latest news, updates and deals directly mailed to your inbox</p> 				
-            </div>
-            <form class="col-lg-6 col-md-12 d-flex align-items-center">
-              <div class="d-flex w-75 border-bottom border-dark py-2">
-                <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Your email address here">
-                <button class="btn border-0" type="button">Subscribe</button>
               </div>
             </form>
           </div> 			
@@ -686,17 +541,6 @@
         </div>
       </div>
     </footer>
-    <div id="footer-bottom">
-      <div class="container">
-        <div class="row d-flex flex-wrap justify-content-between">
-          <div class="col-12">
-            <div class="copyright">
-              <p>© Copyright 2024 Soapy. Template by <a href="https://templatesjungle.com/" target="_blank"><b>TemplatesJungle</b></a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     
     <script src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
