@@ -12,7 +12,9 @@
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reponsive.css">  
     <link rel="stylesheet" type="text/css" href="style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,7 +67,7 @@
       <nav id="header-nav" class="navbar navbar-expand-lg px-3">
         <div class="container">
           <a class="navbar-brand d-lg-none" href="index.html">
-            <img src="images/main-logo.png" class="logo">
+            <img src="images/main-logo.png" class="logo" style="max-width: 100%; height: auto;">
           </a>
           <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
@@ -127,9 +129,8 @@
                     </ul>
                   </li>                   -->
                 </ul>
-                
-                <a class="navbar-brand d-none d-lg-block me-0" href="index.html">
-                  <img src="images/main-logo.png" class="logo" width="70px" height="100px">
+                <a class="navbar-brand d-block" href="index.html">
+                  <img src="images/main-logo.png" class="logo" style="width: 70px; height: 100px; max-width: 100%; height: auto;">
                 </a>
 
                 <ul class="list-unstyled d-lg-flex justify-content-between align-items-center">
@@ -208,7 +209,7 @@
       <div class="container">
         <div class="row">
           <div class="offset-md-2 col-md-8">
-            <h3 class="text-center mb-5" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true" style="font-size: 40px; font-weight: bold;">GIỚI THIỆU THƯƠNG HIỆU</h3>
+            <h3 class="py-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1500" data-aos-once="true" style="font-size: 40px; font-weight: bold;; text-align: center;">Giới Thiệu Thương Hiệu</h3>
             <div class="review-content position-relative" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1500" data-aos-once="true">
               <div class="swiper testimonial-swiper">
                 <div class="swiper-wrapper">
@@ -294,17 +295,18 @@
       <div class="container">
         <div class="row">
           <div class="offset-md-2 col-md-8">
-            <h3 class="py-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1500" data-aos-once="true" style="font-size: 40px; font-weight: bold;">CÂU CHUYỆN THƯƠNG HIỆU</h3>
+            <h3 class="py-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1500" data-aos-once="true" style="font-size: 40px; font-weight: bold;">Câu chuyện thương hiệu</h3>
             <p data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1800" data-aos-once="true">
               Người phụ nữ xuất hiện trên sản phẩm xà bông Cô Ba của Trương Văn Bền là cô Ba Thiệu - người con gái Trà Vinh sắc nước hương trời đã đăng quang Miss Saigon hơn 150 năm trước. Hình ảnh cô Ba vốn dĩ đại diện cho nữ quyền, sức mạnh của dân tộc ta trong quá khứ. Song, thương hiệu xà bông cô Ba Việt Nam ở xã hội hiện đại hướng đến một hình tượng mới đại diện cho một nhân chứng sống đã tồn tại qua nhiều năm, trải qua bề dày của lịch sử Việt Nam, chứng kiến biết bao sự thay đổi của xã hội để giờ đây trở lại và mang đến những giá trị tinh thần bền vững sống mãi trong mọi thời đại. 
               </p>
-            <button onclick="toggleContent()" id="readMoreBtn" class="btn me-5">XEM THÊM</button>
+           
             <div id="extraContent" style="display: none;">
               <p class="mt-4">
                 Thương hiệu Xà bông Cô Ba Việt Nam được tái hiện lại từ hình ảnh “xà bông cô Ba” gắn với cái tên “xà bông Việt Nam”, là một lời khẳng định cho hình tượng cô Ba tạo ra sự kết nối với những cảm xúc, giá trị tinh thần cốt lõi, sâu thẳm nhất đến gần hơn với các bạn trẻ, đặc biệt là thế hệ genZ. Đồng thời, Xà bông Cô Ba Việt Nam tự hào khi tất cả những giá trị cốt lõi ấy đều được gói gọn lại trong chiếc bánh xà phòng được sản xuất bởi một thương hiệu thuần Việt, thổi vào sản phẩm linh hồn kiêu hãnh đầy tự hào, lan tỏa lòng tự tôn của một thương hiệu Việt Nam đến người tiêu dùng Việt và bạn bè quốc tế. 
 
               </p>
             </div>
+            <button onclick="toggleContent()" id="readMoreBtn" class="btn me-5">XEM THÊM</button>
             <script>
               function toggleContent() {
                 var content = document.getElementById("extraContent");
@@ -479,7 +481,7 @@
               <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
                 <div class="footer-menu">
                   <a class="navbar-brand d-none d-lg-block me-0" href="index.html">
-                    <img src="images/main-logo.png" class="logo" width="70px" height="100px">
+                    <img src="images/main-logo.png" class="logo" style="width: 70px; height: 100px;">
                   </a>
                   <p>Chúng tôi tự hào mang đến những sản phẩm xà phòng thủ công chất lượng cao, được làm từ những nguyên liệu tự nhiên tốt nhất.</p>
                 </div>

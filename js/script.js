@@ -99,8 +99,10 @@
             slidesPerView: 2,
           },
           900: {
+            
             slidesPerView: 3,
             spaceBetween: 20,
+            
           },
           1200: {
             slidesPerView: 6,

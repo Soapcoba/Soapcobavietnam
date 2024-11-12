@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    img {
+        width: 70px;
+        height: 100px;
+    }
+    billboard {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    img {
+        width: 70px;
+        height: 100px;
+    }
+    swiper-slide {
+        height: 100px;
+        width: 100px;
+    }
+}
